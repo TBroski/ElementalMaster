@@ -1,0 +1,50 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "firethrow",
+    "customModelName": "Normal",
+    "name": "Fire Throw Power",
+    "specialInfo": [
+      "Level 2 of fireball power"
+    ],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "hasGlow": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FireThrowPowerRangedItemUsed"
+    },
+    "bulletPower": 0.7999999999999999,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.FIRE"
+    },
+    "bulletModel": "Modelbulletmodel",
+    "customBulletModelTexture": "magma.png",
+    "onBulletHitsBlock": {
+      "name": "FireThrowPowerBulletHitsThing"
+    },
+    "onBulletHitsEntity": {
+      "name": "FireThrowPowerBulletHitsThing"
+    },
+    "onBulletFlyingTick": {
+      "name": "FireThrowPower2WhileBulletFlyingTick"
+    }
+  }
+}

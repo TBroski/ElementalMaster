@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.5,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Dark Dimension Key",
+    "igniterTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "texture": "darkportalrode",
+    "portalTexture": "darkportal2",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:DarkForest"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:DarkMatter"
+    },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

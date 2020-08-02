@@ -1,0 +1,36 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "1": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "2": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "3": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "5": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "6": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "8": {
+      "item": "elementalmaster:lightningingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningarmorlegs",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:smelting",
+  "experience": 2.8,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "elementalmaster:elementalore"
+  },
+  "result": {
+    "item": "elementalmaster:elementalingot"
+  }
+}

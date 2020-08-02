@@ -1,0 +1,27 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:wateringot"
+    },
+    "1": {
+      "item": "elementalmaster:wateringot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:waterhoe",
+    "count": 1
+  }
+}

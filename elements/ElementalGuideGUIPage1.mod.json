@@ -1,0 +1,110 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 392,
+    "height": 332,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "elementalbook.png",
+          "name": "elementalbook.png",
+          "x": 231,
+          "y": 75
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Biomes",
+          "width": 120,
+          "height": 40,
+          "name": "Biomes",
+          "x": 267,
+          "y": 103
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Recipes",
+          "width": 120,
+          "height": 40,
+          "name": "Recipes",
+          "x": 267,
+          "y": 319
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dungeons",
+          "width": 120,
+          "height": 40,
+          "name": "Dungeons",
+          "x": 267,
+          "y": 175
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Magic",
+          "width": 120,
+          "height": 40,
+          "name": "Magic",
+          "x": 465,
+          "y": 103
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mobs",
+          "width": 120,
+          "height": 40,
+          "name": "Mobs",
+          "x": 465,
+          "y": 175
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Bosses",
+          "width": 120,
+          "height": 40,
+          "name": "Bosses",
+          "x": 465,
+          "y": 247
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Endgame",
+          "width": 120,
+          "height": 40,
+          "name": "Endgame",
+          "x": 465,
+          "y": 319
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Power Ups",
+          "width": 120,
+          "height": 40,
+          "name": "Power Ups",
+          "x": 267,
+          "y": 247
+        }
+      }
+    ]
+  }
+}

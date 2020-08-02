@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "1": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "2": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "3": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "4": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "5": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "6": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "7": {
+      "item": "elementalmaster:icenuggets"
+    },
+    "8": {
+      "item": "elementalmaster:icenuggets"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:iceingot",
+    "count": 1
+  }
+}

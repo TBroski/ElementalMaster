@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/fireplank",
+    "up": "elementalmaster:blocks/fireplank",
+    "north": "elementalmaster:blocks/fireplank",
+    "east": "elementalmaster:blocks/fireplank",
+    "south": "elementalmaster:blocks/fireplank",
+    "west": "elementalmaster:blocks/fireplank",
+    "particle": "elementalmaster:blocks/fireplank"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.FIRE_CHARGE"
+      },
+      {
+        "value": "CUSTOM:FireIngot"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "CUSTOM:FireIngot"
+      },
+      {
+        "value": "CUSTOM:FireExtract"
+      },
+      {
+        "value": "CUSTOM:FireIngot"
+      },
+      {
+        "value": "Items.MAGMA_CREAM"
+      },
+      {
+        "value": "CUSTOM:FireIngot"
+      },
+      {
+        "value": "Items.FIRE_CHARGE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FireRune"
+    },
+    "name": "fire_rune_recipe",
+    "namespace": "mod"
+  }
+}

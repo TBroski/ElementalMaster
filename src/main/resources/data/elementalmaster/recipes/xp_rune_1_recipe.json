@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:experience_bottle"
+    },
+    "1": {
+      "item": "elementalmaster:natureingot"
+    },
+    "2": {
+      "item": "minecraft:experience_bottle"
+    },
+    "3": {
+      "item": "elementalmaster:natureingot"
+    },
+    "4": {
+      "item": "elementalmaster:natureextract"
+    },
+    "5": {
+      "item": "elementalmaster:natureingot"
+    },
+    "6": {
+      "item": "minecraft:experience_bottle"
+    },
+    "7": {
+      "item": "elementalmaster:natureingot"
+    },
+    "8": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:xprune1",
+    "count": 1
+  }
+}

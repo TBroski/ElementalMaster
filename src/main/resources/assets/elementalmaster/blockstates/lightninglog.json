@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "elementalmaster:block/lightninglog"
+    },
+    "facing=north": {
+      "model": "elementalmaster:block/lightninglog"
+    },
+    "facing=east": {
+      "model": "elementalmaster:block/lightninglog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "elementalmaster:block/lightninglog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "elementalmaster:block/lightninglog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "elementalmaster:block/lightninglog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

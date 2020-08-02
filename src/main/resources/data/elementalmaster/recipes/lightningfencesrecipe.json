@@ -1,0 +1,32 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "3": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "elementalmaster:lightningplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningfences",
+    "count": 3
+  }
+}

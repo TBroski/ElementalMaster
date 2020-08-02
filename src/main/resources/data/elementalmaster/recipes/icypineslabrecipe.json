@@ -1,0 +1,22 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "1": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "2": {
+      "item": "elementalmaster:icypineplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:icypineslab",
+    "count": 6
+  }
+}

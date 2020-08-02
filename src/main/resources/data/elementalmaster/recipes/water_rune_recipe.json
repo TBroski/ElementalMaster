@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "1": {
+      "item": "elementalmaster:wateringot"
+    },
+    "2": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "3": {
+      "item": "elementalmaster:wateringot"
+    },
+    "4": {
+      "item": "elementalmaster:waterextract"
+    },
+    "5": {
+      "item": "elementalmaster:wateringot"
+    },
+    "6": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "7": {
+      "item": "elementalmaster:wateringot"
+    },
+    "8": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:waterrune",
+    "count": 1
+  }
+}

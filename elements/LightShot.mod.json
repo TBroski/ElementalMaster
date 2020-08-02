@@ -1,0 +1,49 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "lightpower",
+    "customModelName": "Normal",
+    "name": "Light Shot",
+    "specialInfo": [
+      "Shot light at where you look!",
+      "§3Mana Cost:§5 4",
+      "Put it in one of the 5 slots in a Master Station!"
+    ],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.lantern.place"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LightShotRangedItemUsed"
+    },
+    "bulletPower": 10.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "LightShotBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "LightShotBulletHitsLivingEntity"
+    }
+  }
+}

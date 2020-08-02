@@ -1,0 +1,28 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FiriumLog"
+      },
+      {
+        "value": "CUSTOM:IcyPineLog"
+      },
+      {
+        "value": "CUSTOM:LightningLog"
+      },
+      {
+        "value": "CUSTOM:NatureLog"
+      },
+      {
+        "value": "CUSTOM:DarkLeaves"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

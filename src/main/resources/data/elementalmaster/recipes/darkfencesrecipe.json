@@ -1,0 +1,32 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "3": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "elementalmaster:darkplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:darkfences",
+    "count": 3
+  }
+}

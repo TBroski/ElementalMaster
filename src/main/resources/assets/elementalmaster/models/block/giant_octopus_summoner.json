@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/waterinvoquer",
+    "up": "elementalmaster:blocks/waterinvoquer",
+    "north": "elementalmaster:blocks/waterinvoquer2",
+    "east": "elementalmaster:blocks/waterinvoquer2",
+    "south": "elementalmaster:blocks/waterinvoquer2",
+    "west": "elementalmaster:blocks/waterinvoquer2",
+    "particle": "elementalmaster:blocks/waterinvoquer"
+  }
+}

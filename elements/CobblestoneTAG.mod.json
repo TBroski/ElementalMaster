@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkCobblestone"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "stone_tool_materials",
+    "namespace": "minecraft"
+  }
+}

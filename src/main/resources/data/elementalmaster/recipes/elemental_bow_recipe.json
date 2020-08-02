@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "5": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "8": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:elemental_bow",
+    "count": 1
+  }
+}

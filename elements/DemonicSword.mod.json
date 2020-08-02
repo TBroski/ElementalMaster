@@ -1,0 +1,36 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "demonicsword",
+    "customModelName": "Normal",
+    "name": "Demonic Sword",
+    "specialInfo": [
+      "A powerful sword forged by sacred flames directly from hell!",
+      "Is effective against Ice Mobs!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 60,
+    "damageVsEntity": 10.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:FireIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DemonicSwordMobIsHitWithTool"
+    }
+  }
+}

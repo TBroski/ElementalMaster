@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Elemental Plants",
+    "icon": {
+      "value": "CUSTOM:FieryRose"
+    },
+    "showSearch": false
+  }
+}

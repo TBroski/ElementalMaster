@@ -1,0 +1,45 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:PlayerMana>",
+          "color": {
+            "value": -3342541,
+            "falpha": 0.0
+          },
+          "name": "<VAR:PlayerMana>",
+          "x": 73,
+          "y": 443
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": ": <VAR:MaxPlayerMana>",
+          "color": {
+            "value": -3342541,
+            "falpha": 0.0
+          },
+          "name": ": <VAR:MaxPlayerMana>",
+          "x": 111,
+          "y": 443
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manabackground1on5.png",
+          "name": "manabackground1on5.png",
+          "x": 8,
+          "y": 438
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

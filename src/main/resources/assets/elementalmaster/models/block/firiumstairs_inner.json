@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "elementalmaster:blocks/fireplank",
+    "top": "elementalmaster:blocks/fireplank",
+    "side": "elementalmaster:blocks/fireplank"
+  }
+}

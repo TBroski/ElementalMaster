@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/xpore",
+    "up": "elementalmaster:blocks/xpore",
+    "north": "elementalmaster:blocks/xpore",
+    "east": "elementalmaster:blocks/xpore",
+    "south": "elementalmaster:blocks/xpore",
+    "west": "elementalmaster:blocks/xpore",
+    "particle": "elementalmaster:blocks/xpore"
+  }
+}

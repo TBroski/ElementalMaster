@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:natureingot"
+    },
+    "2": {
+      "item": "elementalmaster:natureingot"
+    },
+    "3": {
+      "item": "elementalmaster:natureingot"
+    },
+    "5": {
+      "item": "elementalmaster:natureingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:naturearmorboots",
+    "count": 1
+  }
+}

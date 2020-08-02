@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:earthingot"
+    },
+    "1": {
+      "item": "elementalmaster:earthingot"
+    },
+    "2": {
+      "item": "elementalmaster:earthingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:earthpickaxe",
+    "count": 1
+  }
+}

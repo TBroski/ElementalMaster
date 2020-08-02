@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:natureingot"
+    },
+    "1": {
+      "item": "elementalmaster:natureextract"
+    },
+    "2": {
+      "item": "elementalmaster:natureingot"
+    },
+    "3": {
+      "item": "elementalmaster:natureextract"
+    },
+    "4": {
+      "item": "elementalmaster:xprune1"
+    },
+    "5": {
+      "item": "elementalmaster:natureextract"
+    },
+    "6": {
+      "item": "elementalmaster:natureingot"
+    },
+    "7": {
+      "item": "elementalmaster:natureextract"
+    },
+    "8": {
+      "item": "elementalmaster:natureingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:xprune2",
+    "count": 1
+  }
+}

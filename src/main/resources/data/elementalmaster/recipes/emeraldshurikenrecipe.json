@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:emeraldspike"
+    },
+    "3": {
+      "item": "elementalmaster:emeraldspike"
+    },
+    "4": {
+      "item": "minecraft:slime_ball"
+    },
+    "5": {
+      "item": "elementalmaster:emeraldspike"
+    },
+    "7": {
+      "item": "elementalmaster:emeraldspike"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:emeraldshuriken",
+    "count": 1
+  }
+}

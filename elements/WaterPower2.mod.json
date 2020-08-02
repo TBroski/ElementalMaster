@@ -1,0 +1,35 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "waterballshot2",
+    "customModelName": "Normal",
+    "name": "Water Throw Power",
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Equip it to your Staff Of Elements to shot waterballs on your foes!",
+      "§eLevel 2 :-",
+      "§4Damage: §612",
+      "§4Knockback: §61.25",
+      "§9Shot Range: §3200",
+      "§3Mana Cost: §56"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

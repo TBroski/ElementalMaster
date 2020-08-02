@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="elementalmaster"
+version="1.0.0"
+displayName="Elemental Masters"
+credits="Loic_MaitreDuFeu (me) main creator and developer of the mod, Thanks to RollTye for some custom code of the mod, Thanks to Lauriane for textures!"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Loic_MaitreDuFeu"
+
+[[dependencies.elementalmaster]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

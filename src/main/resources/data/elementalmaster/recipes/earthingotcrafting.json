@@ -1,0 +1,16 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:earthblock"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:earthingot",
+    "count": 9
+  }
+}

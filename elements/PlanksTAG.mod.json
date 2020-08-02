@@ -1,0 +1,28 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FiriumPlanks"
+      },
+      {
+        "value": "CUSTOM:IcyPinePlanks"
+      },
+      {
+        "value": "CUSTOM:LightningPlanks"
+      },
+      {
+        "value": "CUSTOM:NaturePlanks"
+      },
+      {
+        "value": "CUSTOM:DarkPlanks"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "planks",
+    "namespace": "minecraft"
+  }
+}

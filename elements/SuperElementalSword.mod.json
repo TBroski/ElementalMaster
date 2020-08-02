@@ -1,0 +1,39 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "superelementalsword",
+    "customModelName": "Normal",
+    "name": "Super Elemental Sword",
+    "specialInfo": [
+      "An even more powerful sword that any monsters can't resist to it's blade!",
+      "§3Mana Cost: §52 (Per hit)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.8,
+    "enchantability": 40,
+    "damageVsEntity": 18.0,
+    "usageCount": 4000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:ElementalIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "SuperElementalSwordLivingEntityIsHitWithTool"
+    },
+    "onItemInUseTick": {
+      "name": "SuperElementalSwordToolInHandTick"
+    }
+  }
+}

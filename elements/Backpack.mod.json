@@ -1,0 +1,30 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "backpack",
+    "customModelName": "Normal",
+    "name": "Backpack",
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Right-Click to store up to 27 items inside!"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "GUIBackpack",
+    "inventorySize": 28,
+    "inventoryStackSize": 64
+  }
+}

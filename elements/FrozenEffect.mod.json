@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "potion",
+  "definition": {
+    "name": "Frozen Effect",
+    "effectName": "Frozen Effect",
+    "icon": "icepower4.png",
+    "color": {
+      "value": -16737793,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "FrozenEffectOnPotionActiveTick"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:fieryrose"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "elementalmaster:firenuggets"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:fireextract",
+    "count": 1
+  }
+}

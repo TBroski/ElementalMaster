@@ -1,0 +1,19 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:cactusspike"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:cuttingtool",
+    "count": 1
+  }
+}

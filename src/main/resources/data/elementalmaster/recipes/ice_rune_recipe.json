@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:packed_ice"
+    },
+    "1": {
+      "item": "elementalmaster:iceingot"
+    },
+    "2": {
+      "item": "minecraft:packed_ice"
+    },
+    "3": {
+      "item": "elementalmaster:iceingot"
+    },
+    "4": {
+      "item": "elementalmaster:iceextract"
+    },
+    "5": {
+      "item": "elementalmaster:iceingot"
+    },
+    "6": {
+      "item": "minecraft:packed_ice"
+    },
+    "7": {
+      "item": "elementalmaster:iceingot"
+    },
+    "8": {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:icerune",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/furiumstem",
+    "up": "elementalmaster:blocks/furiumstem",
+    "north": "elementalmaster:blocks/furiumwood",
+    "east": "elementalmaster:blocks/furiumwood",
+    "south": "elementalmaster:blocks/furiumwood",
+    "west": "elementalmaster:blocks/furiumwood",
+    "particle": "elementalmaster:blocks/furiumstem"
+  }
+}

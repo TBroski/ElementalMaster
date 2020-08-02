@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ElementalIngot"
+      },
+      {
+        "value": "CUSTOM:ThunderSword"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": "CUSTOM:DemonicSword"
+      },
+      {
+        "value": "CUSTOM:ElementalSword"
+      },
+      {
+        "value": "CUSTOM:FrozenSword"
+      },
+      {
+        "value": "CUSTOM:ElementalIngot"
+      },
+      {
+        "value": "CUSTOM:TsunamiSword"
+      },
+      {
+        "value": "CUSTOM:ElementalIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SuperElementalSword"
+    },
+    "name": "super_elemental_sword_recipe",
+    "namespace": "mod"
+  }
+}

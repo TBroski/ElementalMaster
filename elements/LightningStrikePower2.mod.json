@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "lightningstrikepower2",
+    "customModelName": "Normal",
+    "name": "§eLightning Strike Power",
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Equip it to your Staff Of Elements to strike 8 lightning around you!",
+      "§eLevel 2 :-",
+      "§9Cooldown: §61",
+      "§3Mana Cost: §510"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

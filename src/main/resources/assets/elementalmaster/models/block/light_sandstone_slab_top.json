@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "elementalmaster:blocks/lightsandstonebottom",
+    "top": "elementalmaster:blocks/lightsandstonetop",
+    "side": "elementalmaster:blocks/lightsandstone"
+  }
+}

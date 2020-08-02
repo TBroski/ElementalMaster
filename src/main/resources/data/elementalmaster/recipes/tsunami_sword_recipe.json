@@ -1,0 +1,36 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:waterextract"
+    },
+    "2": {
+      "item": "elementalmaster:water_soul"
+    },
+    "3": {
+      "item": "elementalmaster:wateringot"
+    },
+    "4": {
+      "item": "elementalmaster:watersword"
+    },
+    "5": {
+      "item": "elementalmaster:waterextract"
+    },
+    "6": {
+      "item": "elementalmaster:elemental_nugget"
+    },
+    "7": {
+      "item": "elementalmaster:wateringot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:tsunamisword",
+    "count": 1
+  }
+}

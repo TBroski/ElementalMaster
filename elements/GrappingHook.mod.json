@@ -1,0 +1,38 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "grappin",
+    "customModelName": "Normal",
+    "name": "Grapping Hook",
+    "specialInfo": [
+      "Right-Click at any block to grab to it!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 300,
+    "actionSound": {
+      "value": "block.anvil.step"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 2.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.GHAST_TEAR"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

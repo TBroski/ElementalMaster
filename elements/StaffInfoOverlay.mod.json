@@ -1,0 +1,62 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Spell:",
+          "color": {
+            "value": -3407668,
+            "falpha": 0.0
+          },
+          "name": "Spell:",
+          "x": 4,
+          "y": 409
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level:",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "Level:",
+          "x": 4,
+          "y": 391
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ItemLevel",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "ItemLevel",
+          "x": 63,
+          "y": 391
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "SelectedSpell",
+          "color": {
+            "value": -65281,
+            "falpha": 0.0
+          },
+          "name": "SelectedSpell",
+          "x": 63,
+          "y": 409
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

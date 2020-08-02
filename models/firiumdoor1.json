@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "blocks/oak_door_top",
+		"particle": "blocks/oak_door_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 3],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#particle", "cullface": "north"},
+				"east": {"uv": [13, 0, 16, 16], "texture": "#particle"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#particle", "cullface": "south"},
+				"west": {"uv": [3, 0, 0, 16], "texture": "#particle", "cullface": "west"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#particle"},
+				"down": {"uv": [0, 13, 16, 16], "texture": "#particle", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 16, 0],
+			"to": [16, 32, 3],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [13, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [3, 0, 0, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [0, 11, 16, 14], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "CustomDoor1",
+			"children": [
+				{
+					"name": "door_bottom",
+					"children": [0]
+				},
+				{
+					"name": "door_top",
+					"children": [1]
+				}
+			]
+		}
+	]
+}

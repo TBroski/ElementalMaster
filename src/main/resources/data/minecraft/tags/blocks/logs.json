@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "elementalmaster:firiumlog",
+    "elementalmaster:icypinelog",
+    "elementalmaster:lightninglog",
+    "elementalmaster:naturelog",
+    "elementalmaster:darklog"
+  ]
+}

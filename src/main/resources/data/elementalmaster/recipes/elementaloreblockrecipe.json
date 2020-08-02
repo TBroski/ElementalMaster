@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "1": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "2": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "3": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "4": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "5": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "6": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "7": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "8": {
+      "item": "elementalmaster:elementalingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:elementaloreblock",
+    "count": 1
+  }
+}

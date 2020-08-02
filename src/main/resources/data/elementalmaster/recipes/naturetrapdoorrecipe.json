@@ -1,0 +1,32 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "1": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "2": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "3": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "4": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "5": {
+      "item": "elementalmaster:natureplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:naturetrapdoor",
+    "count": 2
+  }
+}

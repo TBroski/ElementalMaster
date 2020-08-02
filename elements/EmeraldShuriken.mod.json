@@ -1,0 +1,36 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "emerald_shuriken",
+    "customModelName": "Normal",
+    "name": "Emerald Shuriken",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "stackSize": 4,
+    "ammoItem": {
+      "value": "CUSTOM:EmeraldShuriken"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "shuriken",
+    "customBulletModelTexture": "emeraldshuriken.png"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/waterbrique2",
+    "up": "elementalmaster:blocks/waterbrique2",
+    "north": "elementalmaster:blocks/waterbrique2",
+    "east": "elementalmaster:blocks/waterbrique2",
+    "south": "elementalmaster:blocks/waterbrique2",
+    "west": "elementalmaster:blocks/waterbrique2",
+    "particle": "elementalmaster:blocks/waterbrique2"
+  }
+}

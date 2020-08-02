@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "1": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "2": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "3": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "4": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "5": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "6": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "7": {
+      "item": "elementalmaster:firenuggets"
+    },
+    "8": {
+      "item": "elementalmaster:firenuggets"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:fireingot",
+    "count": 1
+  }
+}

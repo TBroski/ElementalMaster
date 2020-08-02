@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementalmaster:blocks/orange_flower",
+    "particle": "elementalmaster:blocks/orange_flower"
+  }
+}

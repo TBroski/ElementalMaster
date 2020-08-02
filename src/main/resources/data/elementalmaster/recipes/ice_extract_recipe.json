@@ -1,0 +1,25 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:snowyflower"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "elementalmaster:icenuggets"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:iceextract",
+    "count": 1
+  }
+}

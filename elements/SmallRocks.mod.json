@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "stone",
+    "customModelName": "smallrocks:default",
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "growapableSpawnType": "Cave",
+    "growapableMaxHeight": 3,
+    "name": "Small Rocks",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalBlocks"
+    },
+    "hardness": 0.05,
+    "resistance": 0.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "customDrop": {
+      "value": "Blocks.COBBLESTONE"
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": []
+  }
+}

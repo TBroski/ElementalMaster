@@ -1,0 +1,35 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "firerune",
+    "customModelName": "Normal",
+    "name": "Rune of Fire",
+    "creativeTab": {
+      "value": "CUSTOM:ElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Grants you §4Fire Resistance §fand §6Strength II §fwhen in Inventory!",
+      "Can be found in Dungeons!",
+      "Can be crafted!"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "RunesProcedures"
+    }
+  }
+}

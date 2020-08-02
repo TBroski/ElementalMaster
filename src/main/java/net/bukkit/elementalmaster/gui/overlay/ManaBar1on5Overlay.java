@@ -1,0 +1,70 @@
+
+package net.bukkit.elementalmaster.gui.overlay;
+
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.Minecraft;
+
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
+import net.bukkit.elementalmaster.ElementalmasterModElements;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
+
+@ElementalmasterModElements.ModElement.Tag
+public class ManaBar1on5Overlay extends ElementalmasterModElements.ModElement {
+	public ManaBar1on5Overlay(ElementalmasterModElements instance) {
+		super(instance, 473);
+	}
+
+	@Override
+	public void initElements() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+	public void eventHandler(RenderGameOverlayEvent event) {
+		if (!event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
+			int posX = (event.getWindow().getScaledWidth()) / 2;
+			int posY = (event.getWindow().getScaledHeight()) / 2;
+			PlayerEntity entity = Minecraft.getInstance().player;
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			if (true) {
+				Minecraft.getInstance().fontRenderer
+						.drawString(
+								"" + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + "",
+								posX + -176, posY + 102, -3342541);
+				Minecraft.getInstance().fontRenderer
+						.drawString(
+								": " + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana) + "",
+								posX + -157, posY + 102, -3342541);
+				RenderSystem.disableDepthTest();
+				RenderSystem.depthMask(false);
+				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
+						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				RenderSystem.disableAlphaTest();
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("elementalmaster:textures/manabackground1on5.png"));
+				Minecraft.getInstance().ingameGUI.blit(posX + -209, posY + 99, 0, 0, 256, 256);
+				RenderSystem.depthMask(true);
+				RenderSystem.enableDepthTest();
+				RenderSystem.enableAlphaTest();
+				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+			}
+		}
+	}
+}

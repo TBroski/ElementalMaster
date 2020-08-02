@@ -1,0 +1,29 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "elemental_fruit",
+    "customModelName": "Normal",
+    "name": "Mana Fruit",
+    "specialInfo": [
+      "Increase the player's total Mana limit by +10 when you eat it!",
+      "You can still increase your mana until 150 Mana!",
+      "Obtained by killing bosses or rarely found in Dungeon chests!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalItems"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ManaFruitFoodEaten"
+    }
+  }
+}

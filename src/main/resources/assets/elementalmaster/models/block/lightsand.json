@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/lightsand",
+    "up": "elementalmaster:blocks/lightsand",
+    "north": "elementalmaster:blocks/lightsand",
+    "east": "elementalmaster:blocks/lightsand",
+    "south": "elementalmaster:blocks/lightsand",
+    "west": "elementalmaster:blocks/lightsand",
+    "particle": "elementalmaster:blocks/lightsand"
+  }
+}

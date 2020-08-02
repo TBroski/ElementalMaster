@@ -1,0 +1,84 @@
+{
+  "_fv": 10,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "CUSTOM:LightSand"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:LightSandstone"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 5,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.VINE"
+    },
+    "treeStem": {
+      "value": "CUSTOM:LightningLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:LightningLeaves"
+    },
+    "treeFruits": {
+      "value": "Blocks.COCOA"
+    },
+    "airColor": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -6711040,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -3342541,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 1,
+    "grassPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 6,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 2,
+    "cactiPerChunk": 2,
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
+    "baseHeight": 0.19999999999999998,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "biomeWeight": 6,
+    "biomeType": "DESERT",
+    "biomeCategory": "DESERT",
+    "parent": {
+      "value": "desert"
+    },
+    "biomeDictionaryTypes": [
+      "SANDY"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityMonster"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Mummy"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

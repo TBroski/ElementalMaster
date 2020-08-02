@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "L",
+    "keyBindingName": "Armor Ability OFF",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ArmorAbilityOFFOnKeyPressed"
+    }
+  }
+}

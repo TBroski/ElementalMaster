@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:firiumplanks"
+    },
+    "4": {
+      "item": "elementalmaster:firiumplanks"
+    },
+    "5": {
+      "item": "elementalmaster:firiumplanks"
+    },
+    "6": {
+      "item": "elementalmaster:firiumplanks"
+    },
+    "7": {
+      "item": "elementalmaster:firiumplanks"
+    },
+    "8": {
+      "item": "elementalmaster:firiumplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:firiumstairs",
+    "count": 4
+  }
+}

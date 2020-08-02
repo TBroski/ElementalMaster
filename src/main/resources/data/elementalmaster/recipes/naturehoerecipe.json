@@ -1,0 +1,27 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:natureingot"
+    },
+    "1": {
+      "item": "elementalmaster:natureingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:naturehoe",
+    "count": 1
+  }
+}

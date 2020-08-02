@@ -1,0 +1,25 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "minecraft:coarse_dirt"
+    },
+    {
+      "item": "elementalmaster:earthnuggets"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:earthextract",
+    "count": 1
+  }
+}

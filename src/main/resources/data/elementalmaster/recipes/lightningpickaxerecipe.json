@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "1": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "2": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningpickaxe",
+    "count": 1
+  }
+}

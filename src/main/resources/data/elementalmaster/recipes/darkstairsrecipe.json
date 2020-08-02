@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "4": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "5": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "6": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "7": {
+      "item": "elementalmaster:darkplanks"
+    },
+    "8": {
+      "item": "elementalmaster:darkplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:darkstairs",
+    "count": 4
+  }
+}

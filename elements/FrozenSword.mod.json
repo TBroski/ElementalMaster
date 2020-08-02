@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "frozensword",
+    "customModelName": "Normal",
+    "name": "Frozen Sword",
+    "specialInfo": [
+      "A powerful sword made with the coolest ice of the north!",
+      "Is more effective against Earth Mobs!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 60,
+    "damageVsEntity": 10.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:IceIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

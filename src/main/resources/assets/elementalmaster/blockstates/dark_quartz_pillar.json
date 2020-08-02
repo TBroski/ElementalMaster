@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "elementalmaster:block/dark_quartz_pillar"
+    },
+    "facing=north": {
+      "model": "elementalmaster:block/dark_quartz_pillar"
+    },
+    "facing=east": {
+      "model": "elementalmaster:block/dark_quartz_pillar",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "elementalmaster:block/dark_quartz_pillar",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "elementalmaster:block/dark_quartz_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "elementalmaster:block/dark_quartz_pillar",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

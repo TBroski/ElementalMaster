@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "2": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "3": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "5": {
+      "item": "elementalmaster:lightningingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningarmorboots",
+    "count": 1
+  }
+}

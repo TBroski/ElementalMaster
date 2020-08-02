@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalmaster:block/lightningslab"
+    },
+    "type=top": {
+      "model": "elementalmaster:block/lightningslab_top"
+    },
+    "type=double": {
+      "model": "elementalmaster:block/lightningslab_full"
+    }
+  }
+}

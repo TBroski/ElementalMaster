@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "1": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "2": {
+      "item": "minecraft:sugar"
+    },
+    "3": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "4": {
+      "item": "elementalmaster:lightextract"
+    },
+    "5": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "6": {
+      "item": "minecraft:sugar"
+    },
+    "7": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "8": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningrune",
+    "count": 1
+  }
+}

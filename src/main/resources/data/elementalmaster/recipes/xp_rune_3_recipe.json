@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:manapotion"
+    },
+    "1": {
+      "item": "elementalmaster:natureblock"
+    },
+    "2": {
+      "item": "elementalmaster:manapotion"
+    },
+    "3": {
+      "item": "elementalmaster:natureblock"
+    },
+    "4": {
+      "item": "elementalmaster:xprune2"
+    },
+    "5": {
+      "item": "elementalmaster:natureblock"
+    },
+    "6": {
+      "item": "elementalmaster:manapotion"
+    },
+    "7": {
+      "item": "elementalmaster:natureblock"
+    },
+    "8": {
+      "item": "elementalmaster:manapotion"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:xprune3",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "elementalmaster:custom/smallrocks",
+  "textures": {
+    "all": "elementalmaster:blocks/stone",
+    "particle": "elementalmaster:blocks/stone",
+    "0": "elementalmaster:blocks/stone"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:LightningIngot"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "CUSTOM:LightningIngot"
+      },
+      {
+        "value": "CUSTOM:LightExtract"
+      },
+      {
+        "value": "CUSTOM:LightningIngot"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "CUSTOM:LightningIngot"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightningRune"
+    },
+    "name": "light_rune_recipe",
+    "namespace": "mod"
+  }
+}

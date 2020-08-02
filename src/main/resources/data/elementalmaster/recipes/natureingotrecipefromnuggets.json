@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "1": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "2": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "3": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "4": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "5": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "6": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "7": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "8": {
+      "item": "elementalmaster:naturenuggets"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:natureingot",
+    "count": 1
+  }
+}

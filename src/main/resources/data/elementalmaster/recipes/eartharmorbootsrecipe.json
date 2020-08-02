@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:earthingot"
+    },
+    "2": {
+      "item": "elementalmaster:earthingot"
+    },
+    "3": {
+      "item": "elementalmaster:earthingot"
+    },
+    "5": {
+      "item": "elementalmaster:earthingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:eartharmorboots",
+    "count": 1
+  }
+}

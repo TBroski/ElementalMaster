@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "potion",
+  "definition": {
+    "name": "Mana Regeneration",
+    "effectName": "Mana Regeneration ",
+    "icon": "manapotion.png",
+    "color": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ManaRegenerationOnPotionActiveTick"
+    }
+  }
+}

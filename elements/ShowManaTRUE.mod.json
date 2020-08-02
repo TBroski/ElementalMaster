@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Show Mana TRUE",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "ShowManaTRUEOnKeyPressed"
+    }
+  }
+}

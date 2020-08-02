@@ -1,0 +1,48 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:PlayerMana>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "<VAR:PlayerMana>",
+          "x": 73,
+          "y": 443
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": ": <VAR:MaxPlayerMana>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": ": <VAR:MaxPlayerMana>",
+          "x": 111,
+          "y": 443
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manabackground4on5.png",
+          "name": "manabackground4on5.png",
+          "x": 7,
+          "y": 438
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "ManaBar4on5DisplayOverlayIngame"
+    }
+  }
+}

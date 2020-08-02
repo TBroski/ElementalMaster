@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "lightningstrikepower3",
+    "customModelName": "Normal",
+    "name": "Omega Lightning Strike Power",
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Equip it to your Staff Of Elements to strike lightning on ALL mobs around you in a radius of 10!",
+      "§eLevel 3 :-",
+      "§9Cooldown: §60.5",
+      "§3Mana Cost: §510"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64
+  }
+}

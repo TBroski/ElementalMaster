@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:fireingot"
+    },
+    "2": {
+      "item": "elementalmaster:fireingot"
+    },
+    "3": {
+      "item": "elementalmaster:fireingot"
+    },
+    "5": {
+      "item": "elementalmaster:fireingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:firearmorboots",
+    "count": 1
+  }
+}

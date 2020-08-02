@@ -1,0 +1,36 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "shuriken",
+    "customModelName": "Normal",
+    "name": "Shuriken",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "stackSize": 4,
+    "ammoItem": {
+      "value": "CUSTOM:Shuriken"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ElementalIngot"
+    },
+    "bulletModel": "shuriken",
+    "customBulletModelTexture": "shuriken.png"
+  }
+}

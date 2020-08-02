@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalmaster:block/firiumslab"
+    },
+    "type=top": {
+      "model": "elementalmaster:block/firiumslab_top"
+    },
+    "type=double": {
+      "model": "elementalmaster:block/firiumslab_full"
+    }
+  }
+}

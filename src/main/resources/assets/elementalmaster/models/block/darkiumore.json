@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/darkiumore",
+    "up": "elementalmaster:blocks/darkiumore",
+    "north": "elementalmaster:blocks/darkiumore",
+    "east": "elementalmaster:blocks/darkiumore",
+    "south": "elementalmaster:blocks/darkiumore",
+    "west": "elementalmaster:blocks/darkiumore",
+    "particle": "elementalmaster:blocks/darkiumore"
+  }
+}

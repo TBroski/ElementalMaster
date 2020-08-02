@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/dgasgasg",
+    "up": "elementalmaster:blocks/dgasgasg",
+    "north": "elementalmaster:blocks/agagadsf",
+    "east": "elementalmaster:blocks/agagadsf",
+    "south": "elementalmaster:blocks/agagadsf",
+    "west": "elementalmaster:blocks/agagadsf",
+    "particle": "elementalmaster:blocks/dgasgasg"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "darksoul",
+    "customModelName": "Normal",
+    "name": "Rune Pendant",
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Used to store the runes if you have too much on yourself!",
+      "CURRENTLY NOT FUNCTIONAL"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "RuneStoringGUI",
+    "inventorySize": 9,
+    "inventoryStackSize": 1
+  }
+}

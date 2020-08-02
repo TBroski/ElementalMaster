@@ -1,0 +1,7 @@
+{
+  "_fv": 10,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_nbt_logic_set\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">ShowManaCONFIG</field></block></value><value name=\"tagValue\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value><next><block type=\"entity_send_chat\"><comment h=\"52\" pinned=\"false\" w=\"289\">This gets the coordinates of the provided entity, then prints the coordinates in the action bar.</comment><value name=\"text\"><block inline=\"true\" type=\"text_join\"><mutation items=\"1\"/><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">Set Mana Show to FALSE</field></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"actbar\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></xml>"
+  }
+}

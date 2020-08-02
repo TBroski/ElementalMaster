@@ -1,0 +1,525 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 3.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:music_disc_13"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:music_disc_cat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:name_tag"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 4.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:wheat"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:redstone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:coal"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:melon_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:pumpkin_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:beetroot_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:bone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:gunpowder"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:rotten_flesh"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:string"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:firenuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:icenuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:lightningnuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:waternuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:earthnuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:naturenuggets",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:elemental_nugget",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:xp_boost_gem",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:firerune",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:icerune",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:lightningrune",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:saturationrune",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:nightvisionrune",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:flyingrune",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:healingrune",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:xprune1",
+          "weight": 14
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:xprune2",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:xprune3",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:luckrune",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:invisibilityrune",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:waterrune",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:bonus_slot_gem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:less_mana_gem",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:shuriken",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:goldshuriken",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:emeraldshuriken",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:diamondshuriken",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:elementalshuriken",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:fireaxe",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:earthhoe",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:icesword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:naturepickaxe",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:lightningshovel",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:lightningarmorbody",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:waterarmorbody",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:naturearmorbody",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:firearmorlegs",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:eartharmorboots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:firearmorboots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:naturearmorlegs",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:lightningarmorlegs",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:eartharmorboots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:firesword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementalmaster:earthsword",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

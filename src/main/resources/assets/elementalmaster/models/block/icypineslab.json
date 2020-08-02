@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "elementalmaster:blocks/iceplank",
+    "top": "elementalmaster:blocks/iceplank",
+    "side": "elementalmaster:blocks/iceplank"
+  }
+}

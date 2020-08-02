@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "elementalmaster:block/firiumlog"
+    },
+    "facing=north": {
+      "model": "elementalmaster:block/firiumlog"
+    },
+    "facing=east": {
+      "model": "elementalmaster:block/firiumlog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "elementalmaster:block/firiumlog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "elementalmaster:block/firiumlog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "elementalmaster:block/firiumlog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

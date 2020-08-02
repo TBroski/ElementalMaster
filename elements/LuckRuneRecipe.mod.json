@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureExtract"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LuckRune"
+    },
+    "name": "luck_rune_recipe",
+    "namespace": "mod"
+  }
+}

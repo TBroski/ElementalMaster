@@ -1,0 +1,13 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:cactusspike",
+    "count": 8
+  }
+}

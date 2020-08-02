@@ -1,0 +1,55 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "conflagration_crown",
+    "enableBody": true,
+    "textureBody": "conflagration_body",
+    "enableLeggings": true,
+    "textureLeggings": "fire_armor_leggings",
+    "enableBoots": true,
+    "textureBoots": "conflagrationboots",
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "armorTextureFile": "conflagrationfire_armor__",
+    "helmetName": "Fire Masters Crown",
+    "bodyName": "Fire Masters Armor Body",
+    "leggingsName": "Fire Masters Armor Leggings",
+    "bootsName": "Fire Masters Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 50,
+    "damageValueHelmet": 10,
+    "damageValueBody": 20,
+    "damageValueLeggings": 18,
+    "damageValueBoots": 12,
+    "enchantability": 40,
+    "toughness": 5.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:FireIngot"
+      }
+    ]
+  }
+}

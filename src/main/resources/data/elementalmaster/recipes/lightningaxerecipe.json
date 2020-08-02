@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "1": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "2": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningaxe",
+    "count": 1
+  }
+}

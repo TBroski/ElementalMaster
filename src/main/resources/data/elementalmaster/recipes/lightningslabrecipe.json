@@ -1,0 +1,22 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "1": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "2": {
+      "item": "elementalmaster:lightningplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningslab",
+    "count": 6
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "naturecrown",
+    "enableBody": true,
+    "textureBody": "naturearmor_body",
+    "enableLeggings": true,
+    "textureLeggings": "naturearmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "naturearmor_boots",
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "armorTextureFile": "nature_armor_",
+    "helmetName": "Nature Master's Armor Crown",
+    "bodyName": "Nature Master's Armor Body",
+    "leggingsName": "Nature Master's Armor Leggings",
+    "bootsName": "Nature Master's Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 50,
+    "damageValueHelmet": 10,
+    "damageValueBody": 20,
+    "damageValueLeggings": 18,
+    "damageValueBoots": 12,
+    "enchantability": 40,
+    "toughness": 5.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:NatureIngot"
+      }
+    ]
+  }
+}

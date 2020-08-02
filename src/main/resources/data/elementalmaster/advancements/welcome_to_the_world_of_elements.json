@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "elementalmaster:elementalguide"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_the_world_of_elements.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_the_world_of_elements.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcome_to_the_world_of_elements": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "elementalmaster:blocks/iceplank",
+    "top": "elementalmaster:blocks/iceplank",
+    "side": "elementalmaster:blocks/iceplank"
+  }
+}

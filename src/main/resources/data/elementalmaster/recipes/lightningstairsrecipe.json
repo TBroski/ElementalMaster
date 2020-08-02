@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "4": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "5": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "6": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "7": {
+      "item": "elementalmaster:lightningplanks"
+    },
+    "8": {
+      "item": "elementalmaster:lightningplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningstairs",
+    "count": 4
+  }
+}

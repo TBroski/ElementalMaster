@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "1": {
+      "item": "elementalmaster:thundersword"
+    },
+    "2": {
+      "item": "minecraft:nether_star"
+    },
+    "3": {
+      "item": "elementalmaster:demonicsword"
+    },
+    "4": {
+      "item": "elementalmaster:elemental_sword"
+    },
+    "5": {
+      "item": "elementalmaster:frozensword"
+    },
+    "6": {
+      "item": "elementalmaster:elementalingot"
+    },
+    "7": {
+      "item": "elementalmaster:tsunamisword"
+    },
+    "8": {
+      "item": "elementalmaster:elementalingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:super_elemental_sword",
+    "count": 1
+  }
+}

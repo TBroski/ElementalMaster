@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/iceplank",
+    "up": "elementalmaster:blocks/iceplank",
+    "north": "elementalmaster:blocks/iceplank",
+    "east": "elementalmaster:blocks/iceplank",
+    "south": "elementalmaster:blocks/iceplank",
+    "west": "elementalmaster:blocks/iceplank",
+    "particle": "elementalmaster:blocks/iceplank"
+  }
+}

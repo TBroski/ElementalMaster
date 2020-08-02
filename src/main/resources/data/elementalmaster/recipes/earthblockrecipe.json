@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:earthingot"
+    },
+    "1": {
+      "item": "elementalmaster:earthingot"
+    },
+    "2": {
+      "item": "elementalmaster:earthingot"
+    },
+    "3": {
+      "item": "elementalmaster:earthingot"
+    },
+    "4": {
+      "item": "elementalmaster:earthingot"
+    },
+    "5": {
+      "item": "elementalmaster:earthingot"
+    },
+    "6": {
+      "item": "elementalmaster:earthingot"
+    },
+    "7": {
+      "item": "elementalmaster:earthingot"
+    },
+    "8": {
+      "item": "elementalmaster:earthingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:earthblock",
+    "count": 1
+  }
+}

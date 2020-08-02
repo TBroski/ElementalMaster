@@ -1,0 +1,36 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:fireextract"
+    },
+    "2": {
+      "item": "elementalmaster:fire_soul"
+    },
+    "3": {
+      "item": "elementalmaster:fireingot"
+    },
+    "4": {
+      "item": "elementalmaster:firesword"
+    },
+    "5": {
+      "item": "elementalmaster:fireextract"
+    },
+    "6": {
+      "item": "elementalmaster:elemental_nugget"
+    },
+    "7": {
+      "item": "elementalmaster:fireingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:demonicsword",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "elementalmaster:blocks/lightsandstonebottom",
+    "top": "elementalmaster:blocks/lightsandstonetop",
+    "side": "elementalmaster:blocks/lightsandstone"
+  }
+}

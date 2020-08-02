@@ -1,0 +1,22 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "1": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "2": {
+      "item": "elementalmaster:lightsandstone"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:light_sandstone_slab",
+    "count": 6
+  }
+}

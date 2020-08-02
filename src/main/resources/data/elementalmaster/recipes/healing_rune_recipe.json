@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:ghast_tear"
+    },
+    "1": {
+      "item": "elementalmaster:fireingot"
+    },
+    "2": {
+      "item": "minecraft:ghast_tear"
+    },
+    "3": {
+      "item": "elementalmaster:wateringot"
+    },
+    "4": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "5": {
+      "item": "elementalmaster:wateringot"
+    },
+    "6": {
+      "item": "minecraft:ghast_tear"
+    },
+    "7": {
+      "item": "elementalmaster:fireingot"
+    },
+    "8": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:healingrune",
+    "count": 1
+  }
+}

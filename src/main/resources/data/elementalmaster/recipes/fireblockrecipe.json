@@ -1,0 +1,37 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    },
+    {
+      "item": "elementalmaster:fireingot"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:fireblock",
+    "count": 1
+  }
+}

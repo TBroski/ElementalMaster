@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "1": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "2": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "3": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "4": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "5": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "6": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "7": {
+      "item": "elementalmaster:lightningnuggets"
+    },
+    "8": {
+      "item": "elementalmaster:lightningnuggets"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:lightningingot",
+    "count": 1
+  }
+}

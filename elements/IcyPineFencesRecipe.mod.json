@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IcyPinePlanks"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:IcyPinePlanks"
+      },
+      {
+        "value": "CUSTOM:IcyPinePlanks"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:IcyPinePlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IcyPineFences"
+    },
+    "name": "icypinefencesrecipe",
+    "namespace": "mod"
+  }
+}

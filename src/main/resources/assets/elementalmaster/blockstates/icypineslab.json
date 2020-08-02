@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalmaster:block/icypineslab"
+    },
+    "type=top": {
+      "model": "elementalmaster:block/icypineslab_top"
+    },
+    "type=double": {
+      "model": "elementalmaster:block/icypineslab_full"
+    }
+  }
+}

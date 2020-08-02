@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "elementalmaster:blocks/darkplank",
+    "top": "elementalmaster:blocks/darkplank",
+    "side": "elementalmaster:blocks/darkplank"
+  }
+}

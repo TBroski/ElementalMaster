@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/darkstone",
+    "up": "elementalmaster:blocks/darkstone",
+    "north": "elementalmaster:blocks/darkstone",
+    "east": "elementalmaster:blocks/darkstone",
+    "south": "elementalmaster:blocks/darkstone",
+    "west": "elementalmaster:blocks/darkstone",
+    "particle": "elementalmaster:blocks/darkstone"
+  }
+}

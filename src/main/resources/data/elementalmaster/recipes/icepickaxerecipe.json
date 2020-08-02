@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:iceingot"
+    },
+    "1": {
+      "item": "elementalmaster:iceingot"
+    },
+    "2": {
+      "item": "elementalmaster:iceingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:icepickaxe",
+    "count": 1
+  }
+}

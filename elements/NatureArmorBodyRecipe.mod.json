@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      },
+      {
+        "value": "CUSTOM:NatureIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NatureArmor.body"
+    },
+    "name": "naturearmorbodyrecipe",
+    "namespace": "mod"
+  }
+}

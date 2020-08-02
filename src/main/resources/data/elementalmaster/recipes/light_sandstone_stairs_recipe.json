@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "4": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "5": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "6": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "7": {
+      "item": "elementalmaster:lightsandstone"
+    },
+    "8": {
+      "item": "elementalmaster:lightsandstone"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:light_sandstone_stairs",
+    "count": 4
+  }
+}

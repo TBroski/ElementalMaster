@@ -1,0 +1,36 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:iceextract"
+    },
+    "2": {
+      "item": "elementalmaster:ice_soul"
+    },
+    "3": {
+      "item": "elementalmaster:iceingot"
+    },
+    "4": {
+      "item": "elementalmaster:icesword"
+    },
+    "5": {
+      "item": "elementalmaster:iceextract"
+    },
+    "6": {
+      "item": "elementalmaster:elemental_nugget"
+    },
+    "7": {
+      "item": "elementalmaster:iceingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:frozensword",
+    "count": 1
+  }
+}

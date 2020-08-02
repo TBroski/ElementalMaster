@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/icewoodd",
+    "up": "elementalmaster:blocks/icewoodd",
+    "north": "elementalmaster:blocks/icewood",
+    "east": "elementalmaster:blocks/icewood",
+    "south": "elementalmaster:blocks/icewood",
+    "west": "elementalmaster:blocks/icewood",
+    "particle": "elementalmaster:blocks/icewoodd"
+  }
+}

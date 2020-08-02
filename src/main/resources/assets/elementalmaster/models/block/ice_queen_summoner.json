@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/iceinvoquer",
+    "up": "elementalmaster:blocks/iceinvoquer",
+    "north": "elementalmaster:blocks/iceinvoquer2",
+    "east": "elementalmaster:blocks/iceinvoquer2",
+    "south": "elementalmaster:blocks/iceinvoquer2",
+    "west": "elementalmaster:blocks/iceinvoquer2",
+    "particle": "elementalmaster:blocks/iceinvoquer"
+  }
+}

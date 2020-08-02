@@ -1,0 +1,13 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:earthingot"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:earthnuggets",
+    "count": 9
+  }
+}

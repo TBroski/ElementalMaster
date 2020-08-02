@@ -1,0 +1,26 @@
+{
+  "parent": "elementalmaster:custom/elementalcraftinggui",
+  "textures": {
+    "all": "elementalmaster:blocks/elementt",
+    "particle": "elementalmaster:blocks/elementt",
+    "11": "elementalmaster:blocks/beacon",
+    "12": "elementalmaster:blocks/quartz_block_side",
+    "13": "elementalmaster:blocks/diamond_block",
+    "14": "elementalmaster:blocks/hardgoldblock",
+    "15": "elementalmaster:blocks/emerald_block",
+    "16": "elementalmaster:blocks/normalobsidian",
+    "17": "elementalmaster:blocks/purple",
+    "0": "elementalmaster:blocks/quartz_block_top",
+    "1": "elementalmaster:blocks/quartz_block_lines",
+    "2": "elementalmaster:blocks/firestoneblock",
+    "3": "elementalmaster:blocks/blue",
+    "4": "elementalmaster:blocks/purple",
+    "5": "elementalmaster:blocks/electricstoneblock",
+    "6": "elementalmaster:blocks/natureblock",
+    "7": "elementalmaster:blocks/lightblue",
+    "missing": "elementalmaster:blocks/gravi",
+    "8": "elementalmaster:blocks/gravi",
+    "9": "elementalmaster:blocks/eartg",
+    "10": "elementalmaster:blocks/icestoneblock"
+  }
+}

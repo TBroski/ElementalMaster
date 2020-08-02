@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/natureore",
+    "up": "elementalmaster:blocks/natureore",
+    "north": "elementalmaster:blocks/natureore",
+    "east": "elementalmaster:blocks/natureore",
+    "south": "elementalmaster:blocks/natureore",
+    "west": "elementalmaster:blocks/natureore",
+    "particle": "elementalmaster:blocks/natureore"
+  }
+}

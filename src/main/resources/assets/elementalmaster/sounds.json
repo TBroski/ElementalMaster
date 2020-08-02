@@ -1,0 +1,29 @@
+{
+  "electroshock": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "elementalmaster:electroshock",
+        "stream": false
+      }
+    ]
+  },
+  "magicwand1": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementalmaster:magicwand1",
+        "stream": false
+      }
+    ]
+  },
+  "magicwand2": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementalmaster:2020-07-17-18-49-00",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:wateringot"
+    },
+    "2": {
+      "item": "elementalmaster:wateringot"
+    },
+    "3": {
+      "item": "elementalmaster:wateringot"
+    },
+    "5": {
+      "item": "elementalmaster:wateringot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:waterarmorboots",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "elementalmaster:block/dark_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "elementalmaster:block/dark_dimension_portal_ns"
+    }
+  }
+}

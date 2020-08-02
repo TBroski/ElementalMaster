@@ -1,0 +1,8 @@
+{
+  "parent": "elementalmaster:custom/light",
+  "textures": {
+    "all": "elementalmaster:blocks/nothing",
+    "particle": "elementalmaster:blocks/nothing",
+    "missing": "elementalmaster:blocks/nothing"
+  }
+}

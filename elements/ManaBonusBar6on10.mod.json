@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bonusmanabar6on10.png",
+          "name": "bonusmanabar6on10.png",
+          "x": 8,
+          "y": 461
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "ManaBonusBar6on10DisplayOverlayIngame"
+    }
+  }
+}

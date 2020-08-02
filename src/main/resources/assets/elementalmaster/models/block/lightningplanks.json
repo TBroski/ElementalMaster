@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/lightningplank",
+    "up": "elementalmaster:blocks/lightningplank",
+    "north": "elementalmaster:blocks/lightningplank",
+    "east": "elementalmaster:blocks/lightningplank",
+    "south": "elementalmaster:blocks/lightningplank",
+    "west": "elementalmaster:blocks/lightningplank",
+    "particle": "elementalmaster:blocks/lightningplank"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "beacon",
+        "12": "quartz_block_side",
+        "13": "diamond_block",
+        "14": "hardgoldblock",
+        "15": "emerald_block",
+        "16": "normalobsidian",
+        "17": "purple",
+        "0": "quartz_block_top",
+        "1": "quartz_block_lines",
+        "2": "firestoneblock",
+        "3": "blue",
+        "4": "purple",
+        "5": "electricstoneblock",
+        "6": "natureblock",
+        "7": "lightblue",
+        "missing": "gravi",
+        "8": "gravi",
+        "9": "eartg",
+        "10": "icestoneblock"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Power Fusioner",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Power Fusioner",
+          "x": 354,
+          "y": 78
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 301,
+          "y": 144
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 391,
+          "y": 144
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -6750055,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 535,
+          "y": 144
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "name": "arrow.png",
+          "x": 448,
+          "y": 141
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fuse Power",
+          "onClick": {
+            "name": "PowerFusionerRecipes"
+          },
+          "width": 120,
+          "height": 40,
+          "name": "Fuse Power",
+          "x": 366,
+          "y": 193
+        }
+      }
+    ]
+  }
+}

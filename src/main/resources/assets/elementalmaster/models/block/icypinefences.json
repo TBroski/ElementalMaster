@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "elementalmaster:blocks/iceplank",
+    "particle": "elementalmaster:blocks/iceplank"
+  }
+}

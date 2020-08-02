@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "1": {
+      "item": "elementalmaster:light_soul"
+    },
+    "2": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "3": {
+      "item": "elementalmaster:lightextract"
+    },
+    "4": {
+      "item": "elementalmaster:lightningstrikepower"
+    },
+    "5": {
+      "item": "elementalmaster:lightextract"
+    },
+    "6": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "7": {
+      "item": "elementalmaster:lightningrune"
+    },
+    "8": {
+      "item": "elementalmaster:lightningingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:omega_lightning_strike_power",
+    "count": 1
+  }
+}

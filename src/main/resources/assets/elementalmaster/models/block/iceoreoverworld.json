@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/iceore",
+    "up": "elementalmaster:blocks/iceore",
+    "north": "elementalmaster:blocks/iceore",
+    "east": "elementalmaster:blocks/iceore",
+    "south": "elementalmaster:blocks/iceore",
+    "west": "elementalmaster:blocks/iceore",
+    "particle": "elementalmaster:blocks/iceore"
+  }
+}

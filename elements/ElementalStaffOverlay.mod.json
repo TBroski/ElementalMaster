@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "elemental_staff.png",
+          "name": "elemental_staff.png",
+          "x": 203,
+          "y": 441
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

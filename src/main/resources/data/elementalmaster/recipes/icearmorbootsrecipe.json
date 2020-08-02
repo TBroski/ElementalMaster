@@ -1,0 +1,26 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementalmaster:iceingot"
+    },
+    "2": {
+      "item": "elementalmaster:iceingot"
+    },
+    "3": {
+      "item": "elementalmaster:iceingot"
+    },
+    "5": {
+      "item": "elementalmaster:iceingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:icearmorboots",
+    "count": 1
+  }
+}

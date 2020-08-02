@@ -1,0 +1,19 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "elementalmaster:cuttingtool"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:diamondspike",
+    "count": 4
+  }
+}

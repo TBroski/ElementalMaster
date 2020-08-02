@@ -1,0 +1,13 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementalmaster:natureblock"
+    }
+  ],
+  "result": {
+    "item": "elementalmaster:natureingot",
+    "count": 9
+  }
+}

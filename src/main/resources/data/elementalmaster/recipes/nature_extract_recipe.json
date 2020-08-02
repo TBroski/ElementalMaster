@@ -1,0 +1,30 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:clovers"
+    },
+    "3": {
+      "item": "minecraft:lime_dye"
+    },
+    "4": {
+      "tag": "minecraft:saplings"
+    },
+    "5": {
+      "item": "elementalmaster:naturenuggets"
+    },
+    "7": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:natureextract",
+    "count": 1
+  }
+}

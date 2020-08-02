@@ -1,0 +1,34 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "elemental_staff",
+    "customModelName": "Normal",
+    "name": "§dThe Staff Of Elements",
+    "specialInfo": [
+      "There is the use of custom code here!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:SpecialElementalItems"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TheStaffOfElementsRightClickedInAir"
+    },
+    "onItemInUseTick": {
+      "name": "TheStaffOfElementsToolInHandTick"
+    }
+  }
+}

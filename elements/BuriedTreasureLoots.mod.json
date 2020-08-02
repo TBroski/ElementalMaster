@@ -1,0 +1,143 @@
+{
+  "_fv": 10,
+  "_type": "loottable",
+  "definition": {
+    "type": "Chest",
+    "pools": [
+      {
+        "minrolls": 1,
+        "maxrolls": 8,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterIngot"
+            },
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterNuggets"
+            },
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterRune"
+            },
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:NightVisionRune"
+            },
+            "weight": 4
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:IceRune"
+            },
+            "weight": 4
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterExtract"
+            },
+            "weight": 6
+          }
+        ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterPickaxe"
+            },
+            "weight": 12
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterArmor.helmet"
+            },
+            "weight": 8
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterArmor.body"
+            },
+            "weight": 8
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterArmor.legs"
+            },
+            "weight": 8
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterArmor.boots"
+            },
+            "weight": 8
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterAxe"
+            },
+            "weight": 12
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterSword"
+            },
+            "weight": 12
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterShovel"
+            },
+            "weight": 12
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WaterHoe"
+            },
+            "weight": 15
+          }
+        ]
+      }
+    ],
+    "name": "chests/buried_treasure",
+    "namespace": "minecraft"
+  }
+}

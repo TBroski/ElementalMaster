@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementalmaster:diamondshuriken"
+    },
+    "title": {
+      "translate": "advancements.a_rich_fighter.title"
+    },
+    "description": {
+      "translate": "advancements.a_rich_fighter.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a_rich_fighter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "elementalmaster:diamondshuriken",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:adventure/sniper_duel"
+}

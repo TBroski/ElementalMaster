@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/darkquartzore",
+    "up": "elementalmaster:blocks/darkquartzore",
+    "north": "elementalmaster:blocks/darkquartzore",
+    "east": "elementalmaster:blocks/darkquartzore",
+    "south": "elementalmaster:blocks/darkquartzore",
+    "west": "elementalmaster:blocks/darkquartzore",
+    "particle": "elementalmaster:blocks/darkquartzore"
+  }
+}

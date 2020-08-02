@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalmaster:block/darkslab"
+    },
+    "type=top": {
+      "model": "elementalmaster:block/darkslab_top"
+    },
+    "type=double": {
+      "model": "elementalmaster:block/darkslab_full"
+    }
+  }
+}

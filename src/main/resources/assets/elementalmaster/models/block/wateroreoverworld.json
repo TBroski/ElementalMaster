@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementalmaster:blocks/watery",
+    "up": "elementalmaster:blocks/watery",
+    "north": "elementalmaster:blocks/watery",
+    "east": "elementalmaster:blocks/watery",
+    "south": "elementalmaster:blocks/watery",
+    "west": "elementalmaster:blocks/watery",
+    "particle": "elementalmaster:blocks/watery"
+  }
+}

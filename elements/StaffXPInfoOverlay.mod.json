@@ -1,0 +1,36 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "XP Left: ",
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "name": "XP Left: ",
+          "x": 4,
+          "y": 373
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "XPAmount",
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "name": "XPAmount",
+          "x": 83,
+          "y": 373
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementalmaster:block/natureslab"
+    },
+    "type=top": {
+      "model": "elementalmaster:block/natureslab_top"
+    },
+    "type=double": {
+      "model": "elementalmaster:block/natureslab_full"
+    }
+  }
+}

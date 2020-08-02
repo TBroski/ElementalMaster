@@ -1,0 +1,42 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "1": {
+      "item": "elementalmaster:natureingot"
+    },
+    "2": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "3": {
+      "item": "elementalmaster:natureingot"
+    },
+    "4": {
+      "item": "elementalmaster:natureextract"
+    },
+    "5": {
+      "item": "elementalmaster:natureingot"
+    },
+    "6": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "7": {
+      "item": "elementalmaster:natureingot"
+    },
+    "8": {
+      "item": "minecraft:rabbit_foot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:luckrune",
+    "count": 1
+  }
+}

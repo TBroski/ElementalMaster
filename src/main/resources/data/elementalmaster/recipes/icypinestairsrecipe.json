@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "4": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "5": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "6": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "7": {
+      "item": "elementalmaster:icypineplanks"
+    },
+    "8": {
+      "item": "elementalmaster:icypineplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:icypinestairs",
+    "count": 4
+  }
+}

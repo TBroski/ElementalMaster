@@ -1,0 +1,36 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementalmaster:lightextract"
+    },
+    "2": {
+      "item": "elementalmaster:light_soul"
+    },
+    "3": {
+      "item": "elementalmaster:lightningingot"
+    },
+    "4": {
+      "item": "elementalmaster:lightningsword"
+    },
+    "5": {
+      "item": "elementalmaster:lightextract"
+    },
+    "6": {
+      "item": "elementalmaster:elemental_nugget"
+    },
+    "7": {
+      "item": "elementalmaster:lightningingot"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:thundersword",
+    "count": 1
+  }
+}

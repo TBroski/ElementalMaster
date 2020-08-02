@@ -1,0 +1,36 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "tsumanisword",
+    "customModelName": "Normal",
+    "name": "Tsunami Sword",
+    "specialInfo": [
+      "A powerful sword made from the strength of a great tsunami!",
+      "Is more effective againt Fire Mobs!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:ElementalGears"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 60,
+    "damageVsEntity": 10.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:WaterIngot"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "TsunamiSwordLivingEntityIsHitWithTool"
+    }
+  }
+}

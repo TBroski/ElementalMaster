@@ -1,0 +1,33 @@
+{
+  "group": "elementalmaster",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "4": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "5": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "6": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "7": {
+      "item": "elementalmaster:natureplanks"
+    },
+    "8": {
+      "item": "elementalmaster:natureplanks"
+    }
+  },
+  "result": {
+    "item": "elementalmaster:naturestairs",
+    "count": 4
+  }
+}
