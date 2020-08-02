@@ -5,8 +5,6 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
@@ -23,7 +21,6 @@ import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.Comparator;
 
 @ElementalmasterModElements.ModElement.Tag
 public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModElement {
@@ -41,31 +38,9 @@ public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModEle
 			System.err.println("Failed to load dependency sourceentity for procedure OnEntityAttacked!");
 			return;
 		}
-		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure OnEntityAttacked!");
-			return;
-		}
-		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure OnEntityAttacked!");
-			return;
-		}
-		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure OnEntityAttacked!");
-			return;
-		}
-		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure OnEntityAttacked!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
-		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		IWorld world = (IWorld) dependencies.get("world");
-		if (((world
-				.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB(x - 5 / 2, y - 5 / 2, z - 5 / 2, x + 5 / 2, y + 5 / 2, z + 5 / 2), null)
-				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
+		if ((sourceentity instanceof PlayerEntity)) {
 			if (((EnchantmentHelper.getEnchantmentLevel(IceAspectEnchantment.enchantment,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 1)) {
 				if (((((entity.getPersistentData().getString("ElementType"))).equals("Fire"))
@@ -115,68 +90,88 @@ public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModEle
 					}
 				}
 			}
-		}
-		if ((!(sourceentity instanceof ZombieEntity))) {
-			if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-					((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 1)
-					|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(101) : ItemStack.EMPTY))) == 1))
-					|| (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(102) : ItemStack.EMPTY))) == 1)
-							|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-									((entity instanceof PlayerEntity)
-											? ((PlayerEntity) entity).inventory.armorInventory.get(103)
-											: ItemStack.EMPTY))) == 1)))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 0, (false), (false)));
-			} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-					((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 2)
-					|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(101) : ItemStack.EMPTY))) == 2))
-					&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(102) : ItemStack.EMPTY))) == 2)
-							|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-									((entity instanceof PlayerEntity)
-											? ((PlayerEntity) entity).inventory.armorInventory.get(103)
-											: ItemStack.EMPTY))) == 2)))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 1, (false), (false)));
-			} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-					((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 3)
-					|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(101) : ItemStack.EMPTY))) == 3))
-					&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(102) : ItemStack.EMPTY))) == 3)
-							|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-									((entity instanceof PlayerEntity)
-											? ((PlayerEntity) entity).inventory.armorInventory.get(103)
-											: ItemStack.EMPTY))) == 3)))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 2, (false), (false)));
-			} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-					((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 4)
-					&& ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(101) : ItemStack.EMPTY))) == 4))
-					&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(102) : ItemStack.EMPTY))) == 4)
-							&& ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-									((entity instanceof PlayerEntity)
-											? ((PlayerEntity) entity).inventory.armorInventory.get(103)
-											: ItemStack.EMPTY))) == 4)))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 3, (false), (false)));
-			} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-					((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 5)
-					|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(101) : ItemStack.EMPTY))) == 5))
-					|| (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-							((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(102) : ItemStack.EMPTY))) == 5)
-							|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
-									((entity instanceof PlayerEntity)
-											? ((PlayerEntity) entity).inventory.armorInventory.get(103)
-											: ItemStack.EMPTY))) == 5)))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 4, (false), (false)));
+			if ((!(sourceentity instanceof ZombieEntity))) {
+				if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+						((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 1)
+						|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(101)
+										: ItemStack.EMPTY))) == 1))
+						|| (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(102)
+										: ItemStack.EMPTY))) == 1)
+								|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+										((entity instanceof PlayerEntity)
+												? ((PlayerEntity) entity).inventory.armorInventory.get(103)
+												: ItemStack.EMPTY))) == 1)))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 0, (false), (false)));
+				} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+						((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 2)
+						|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(101)
+										: ItemStack.EMPTY))) == 2))
+						&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(102)
+										: ItemStack.EMPTY))) == 2)
+								|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+										((entity instanceof PlayerEntity)
+												? ((PlayerEntity) entity).inventory.armorInventory.get(103)
+												: ItemStack.EMPTY))) == 2)))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 1, (false), (false)));
+				} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+						((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 3)
+						|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(101)
+										: ItemStack.EMPTY))) == 3))
+						&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(102)
+										: ItemStack.EMPTY))) == 3)
+								|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+										((entity instanceof PlayerEntity)
+												? ((PlayerEntity) entity).inventory.armorInventory.get(103)
+												: ItemStack.EMPTY))) == 3)))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 2, (false), (false)));
+				} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+						((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 4)
+						&& ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(101)
+										: ItemStack.EMPTY))) == 4))
+						&& (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(102)
+										: ItemStack.EMPTY))) == 4)
+								&& ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+										((entity instanceof PlayerEntity)
+												? ((PlayerEntity) entity).inventory.armorInventory.get(103)
+												: ItemStack.EMPTY))) == 4)))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 3, (false), (false)));
+				} else if (((((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+						((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.armorInventory.get(100) : ItemStack.EMPTY))) == 5)
+						|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(101)
+										: ItemStack.EMPTY))) == 5))
+						|| (((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+								((entity instanceof PlayerEntity)
+										? ((PlayerEntity) entity).inventory.armorInventory.get(102)
+										: ItemStack.EMPTY))) == 5)
+								|| ((EnchantmentHelper.getEnchantmentLevel(MagicProtectionEnchantment.enchantment,
+										((entity instanceof PlayerEntity)
+												? ((PlayerEntity) entity).inventory.armorInventory.get(103)
+												: ItemStack.EMPTY))) == 5)))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 4, (false), (false)));
+				}
 			}
 		}
 	}
