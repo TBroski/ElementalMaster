@@ -2726,7 +2726,7 @@
       "type": "procedure",
       "sortid": 422,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
@@ -2736,15 +2736,15 @@
           },
           {
             "name": "x",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "y",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "z",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "world",
@@ -5477,7 +5477,7 @@
       "type": "procedure",
       "sortid": 570,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "player_tick_2",
       "metadata": {
@@ -7439,22 +7439,26 @@
       "type": "procedure",
       "sortid": 656,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "player_tick_3",
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "y",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "z",
-            "type": "int"
+            "type": "number"
           },
           {
             "name": "world",
@@ -7506,6 +7510,10 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -7877,6 +7885,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "darkness_protection"
+    },
+    {
+      "name": "LightningAspect",
+      "type": "enchantment",
+      "sortid": 683,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lightning_aspect"
+    },
+    {
+      "name": "EntitySpawns",
+      "type": "procedure",
+      "sortid": 684,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_spawns",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8354,6 +8388,7 @@
       "item.elementalmaster.less_mana_gem": "Less Mana Gem",
       "block.elementalmaster.lightningoreoverworld": "Lightstone Ore",
       "item.elementalmaster.eartharmorboots": "Earth Boots",
+      "enchantment.elementalmaster.lightning_aspect": "§eLightning Aspect§d",
       "item.elementalmaster.magic_ball_shot_3": "Magic Ball Shot 1",
       "item.elementalmaster.fireextract": "Fire Extract",
       "item.elementalmaster.magic_ball_shot_2": "Magic Ball Shot 1",
@@ -8812,6 +8847,7 @@
       "item.elementalmaster.less_mana_gem": "Less Mana Gem",
       "block.elementalmaster.lightningoreoverworld": "Lightstone Ore",
       "item.elementalmaster.eartharmorboots": "Earth Boots",
+      "enchantment.elementalmaster.lightning_aspect": "§bIce Aspect§d",
       "item.elementalmaster.magic_ball_shot_3": "Magic Ball Shot 1",
       "item.elementalmaster.fireextract": "Fire Extract",
       "item.elementalmaster.magic_ball_shot_2": "Magic Ball Shot 1",

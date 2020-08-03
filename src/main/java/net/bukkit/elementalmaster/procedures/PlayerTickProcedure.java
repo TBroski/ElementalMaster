@@ -6,6 +6,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
@@ -21,18 +22,21 @@ import net.bukkit.elementalmaster.potion.NaturalManaRegenerationPotion;
 import net.bukkit.elementalmaster.potion.AntiDarknessPotion;
 import net.bukkit.elementalmaster.item.DarknessRepellerItem;
 import net.bukkit.elementalmaster.block.TemporatyLightBlockBlock;
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
+import java.util.Map;
+import java.util.HashMap;
 import java.util.Collection;
 
 @ElementalmasterModElements.ModElement.Tag
 public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 	public PlayerTickProcedure(ElementalmasterModElements instance) {
-		super(instance, 386);
+		super(instance, 422);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure PlayerTick!");
 			return;
@@ -54,18 +58,18 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(NaturalManaRegenerationPotion.potion, (int) 300, (int) 0, (false), (false)));
 		if ((!(((entity instanceof PlayerEntity)
 				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(DarknessRepellerItem.block, (int) (1)))
 				: false) || (new Object() {
-					boolean check() {
-						if (entity instanceof LivingEntity) {
-							Collection<EffectInstance> effects = ((LivingEntity) entity).getActivePotionEffects();
+					boolean check(LivingEntity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = _entity.getActivePotionEffects();
 							for (EffectInstance effect : effects) {
 								if (effect.getPotion() == AntiDarknessPotion.potion)
 									return true;
@@ -73,7 +77,7 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 						}
 						return false;
 					}
-				}.check())))) {
+				}.check((LivingEntity) entity))))) {
 			if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 					.equals(new ResourceLocation("elementalmaster:darkforest")))) {
 				if (entity instanceof LivingEntity)
@@ -84,14 +88,11 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 60, (int) 1, (false), (false)));
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 60, (int) 2, (false), (false)));
-				if (entity instanceof PlayerEntity && !world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent(("" + ("You need a Darkness Repeller to access this biome!"))),
 							(true));
 				}
 			}
-		}
-		if (((entity.getPersistentData().getBoolean("ShowManaCONFIG")) == (true))) {
-			entity.getPersistentData().putBoolean("ShowMana", (true));
 		}
 		if (((entity.getPersistentData().getBoolean("PlayerLight")) == (true))) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
@@ -104,11 +105,18 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 		if ((Math.random() < 0.0018)) {
 			entity.getPersistentData().putBoolean("PlayerLight", (false));
 		}
-		if ((!((entity.getPersistentData().getDouble("TotalMana")) > 100))) {
-			entity.getPersistentData().putDouble("TotalMana", 100);
-		}
-		if (((entity.getPersistentData().getDouble("PlayerMana")) > (entity.getPersistentData().getDouble("TotalMana")))) {
-			entity.getPersistentData().putDouble("PlayerMana", (entity.getPersistentData().getDouble("TotalMana")));
+		if ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) > ((entity
+						.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana))) {
+			{
+				double _setval = (double) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana);
+				entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerMana = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 
@@ -117,10 +125,10 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 		if (event.phase == TickEvent.Phase.END) {
 			Entity entity = event.player;
 			World world = entity.world;
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
-			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
@@ -128,17 +136,6 @@ public class PlayerTickProcedure extends ElementalmasterModElements.ModElement {
 			dependencies.put("entity", entity);
 			dependencies.put("event", event);
 			this.executeProcedure(dependencies);
-		}
-	}
-	private int serverMana = 0;
-	@SubscribeEvent
-	public void playerTick(TickEvent.PlayerTickEvent event) {
-		if (!event.player.world.isRemote) {
-			serverMana = event.player.getPersistentData().getInt("PlayerMana");
-		} else {
-			if (serverMana != 0) {
-				event.player.getPersistentData().putInt("PlayerMana", serverMana);
-			}
 		}
 	}
 }

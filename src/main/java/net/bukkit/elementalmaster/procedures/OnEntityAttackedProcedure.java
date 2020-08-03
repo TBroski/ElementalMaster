@@ -4,18 +4,22 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.common.MinecraftForge;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.bukkit.elementalmaster.potion.FrozenEffectPotion;
 import net.bukkit.elementalmaster.enchantment.MagicProtectionEnchantment;
+import net.bukkit.elementalmaster.enchantment.LightningAspectEnchantment;
 import net.bukkit.elementalmaster.enchantment.IceAspectEnchantment;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
@@ -38,20 +42,25 @@ public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModEle
 			System.err.println("Failed to load dependency sourceentity for procedure OnEntityAttacked!");
 			return;
 		}
+		if (dependencies.get("world") == null) {
+			System.err.println("Failed to load dependency world for procedure OnEntityAttacked!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		IWorld world = (IWorld) dependencies.get("world");
 		if ((sourceentity instanceof PlayerEntity)) {
 			if (((EnchantmentHelper.getEnchantmentLevel(IceAspectEnchantment.enchantment,
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 1)) {
 				if (((((entity.getPersistentData().getString("ElementType"))).equals("Fire"))
 						|| (((entity.getPersistentData().getString("ElementType"))).equals("Water")))) {
-					if ((Math.random() < 0.2)) {
+					if ((Math.random() < 0.25)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 80, (int) 0, (false), (false)));
 					}
 				} else {
-					if ((Math.random() < 0.15)) {
+					if ((Math.random() < 0.2)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 60, (int) 0, (false), (false)));
@@ -61,13 +70,13 @@ public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModEle
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 2)) {
 				if (((((entity.getPersistentData().getString("ElementType"))).equals("Fire"))
 						|| (((entity.getPersistentData().getString("ElementType"))).equals("Water")))) {
-					if ((Math.random() < 0.25)) {
+					if ((Math.random() < 0.3)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 100, (int) 1, (false), (false)));
 					}
 				} else {
-					if ((Math.random() < 0.2)) {
+					if ((Math.random() < 0.25)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 80, (int) 1, (false), (false)));
@@ -77,16 +86,62 @@ public class OnEntityAttackedProcedure extends ElementalmasterModElements.ModEle
 					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 3)) {
 				if (((((entity.getPersistentData().getString("ElementType"))).equals("Fire"))
 						|| (((entity.getPersistentData().getString("ElementType"))).equals("Water")))) {
-					if ((Math.random() < 0.3)) {
+					if ((Math.random() < 0.35)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 120, (int) 2, (false), (false)));
 					}
 				} else {
-					if ((Math.random() < 0.25)) {
+					if ((Math.random() < 0.3)) {
 						if (entity instanceof LivingEntity)
 							((LivingEntity) entity)
 									.addPotionEffect(new EffectInstance(FrozenEffectPotion.potion, (int) 100, (int) 2, (false), (false)));
+					}
+				}
+			}
+			if (((EnchantmentHelper.getEnchantmentLevel(LightningAspectEnchantment.enchantment,
+					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 1)) {
+				if ((((entity.getPersistentData().getString("ElementType"))).equals("Water"))) {
+					if ((Math.random() < 0.25)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
+					}
+				} else {
+					if ((Math.random() < 0.2)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
+					}
+				}
+			} else if (((EnchantmentHelper.getEnchantmentLevel(LightningAspectEnchantment.enchantment,
+					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 2)) {
+				if ((((entity.getPersistentData().getString("ElementType"))).equals("Water"))) {
+					if ((Math.random() < 0.3)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
+					}
+				} else {
+					if ((Math.random() < 0.25)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
+					}
+				}
+			} else if (((EnchantmentHelper.getEnchantmentLevel(LightningAspectEnchantment.enchantment,
+					((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) == 3)) {
+				if ((((entity.getPersistentData().getString("ElementType"))).equals("Water"))) {
+					if ((Math.random() < 0.35)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
+					}
+				} else {
+					if ((Math.random() < 0.3)) {
+						if (world instanceof ServerWorld)
+							((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) (entity.getPosX()),
+									(int) (entity.getPosY()), (int) (entity.getPosZ()), false));
 					}
 				}
 			}

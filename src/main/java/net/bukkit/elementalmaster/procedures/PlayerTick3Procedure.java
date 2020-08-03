@@ -7,12 +7,22 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.enchantment.EnchantmentHelper;
 
+import net.bukkit.elementalmaster.enchantment.LightningProtectionEnchantment;
+import net.bukkit.elementalmaster.enchantment.IceAspectEnchantment;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ElementalmasterModElements.ModElement.Tag
 public class PlayerTick3Procedure extends ElementalmasterModElements.ModElement {
@@ -21,7 +31,11 @@ public class PlayerTick3Procedure extends ElementalmasterModElements.ModElement 
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			System.err.println("Failed to load dependency entity for procedure PlayerTick3!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure PlayerTick3!");
 			return;
@@ -38,43 +52,72 @@ public class PlayerTick3Procedure extends ElementalmasterModElements.ModElement 
 			System.err.println("Failed to load dependency world for procedure PlayerTick3!");
 			return;
 		}
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
-		World world = (World) dependencies.get("world");
-		if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("elementalmaster:firiumforest")))) {
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+		Entity entity = (Entity) dependencies.get("entity");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		IWorld world = (IWorld) dependencies.get("world");
+		if ((true)) {
+			if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+					.equals(new ResourceLocation("elementalmaster:firiumforest")))) {
+				if ((Math.random() < 0.25)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+					}
+				}
+				if ((Math.random() < 0.25)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+					}
+				}
+				if ((Math.random() < 0.25)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+					}
 				}
 			}
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+			if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
+					.equals(new ResourceLocation("elementalmaster:darkforest")))) {
+				if ((Math.random() < 0.3)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 40, 20, 20, 20, 1);
+					}
 				}
-			}
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 30, 20, 20, 20, 1);
+				if ((Math.random() < 0.3)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 40, 20, 20, 20, 1);
+					}
+				}
+				if ((Math.random() < 0.3)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 40, 20, 20, 20, 1);
+					}
 				}
 			}
 		}
-		if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
-				.equals(new ResourceLocation("elementalmaster:darkforest")))) {
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 35, 25, 25, 25, 1);
+		if ((true)) {
+			if ((!((EnchantmentHelper.getEnchantmentLevel(Enchantments.FIRE_ASPECT,
+					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) == 0))) {
+				if ((Math.random() < 0.05)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, (y + 1), z, (int) 3, 0.8, 0.8, 0.8, 0.02);
+					}
 				}
 			}
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 35, 25, 25, 25, 1);
+			if ((!((EnchantmentHelper.getEnchantmentLevel(IceAspectEnchantment.enchantment,
+					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) == 0))) {
+				if ((Math.random() < 0.05)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.ITEM_SNOWBALL, x, (y + 1), z, (int) 3, 0.8, 0.8, 0.8, 0.02);
+					}
 				}
 			}
-			if ((Math.random() < 0.25)) {
-				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 35, 25, 25, 25, 1);
+			if ((!((EnchantmentHelper.getEnchantmentLevel(LightningProtectionEnchantment.enchantment,
+					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY))) == 0))) {
+				if ((Math.random() < 0.05)) {
+					if (world instanceof ServerWorld) {
+						((ServerWorld) world).spawnParticle(ParticleTypes.TOTEM_OF_UNDYING, x, (y + 1), z, (int) 5, 0.8, 0.8, 0.8, 0.02);
+					}
 				}
 			}
 		}
@@ -85,10 +128,10 @@ public class PlayerTick3Procedure extends ElementalmasterModElements.ModElement 
 		if (event.phase == TickEvent.Phase.END) {
 			Entity entity = event.player;
 			World world = entity.world;
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
-			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
@@ -98,13 +141,4 @@ public class PlayerTick3Procedure extends ElementalmasterModElements.ModElement 
 			this.executeProcedure(dependencies);
 		}
 	}
-    private boolean serverMana = false;
-    @SubscribeEvent
-    public void playerTick(TickEvent.PlayerTickEvent event) {
-        if (!event.player.world.isRemote) {
-            serverMana = event.player.getPersistentData().getBoolean("ShowMana");
-        } else {
-            event.player.getPersistentData().putBoolean("ShowMana", serverMana);
-        }
-    }
 }

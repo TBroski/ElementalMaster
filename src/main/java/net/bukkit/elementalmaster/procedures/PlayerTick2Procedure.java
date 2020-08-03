@@ -11,14 +11,17 @@ import net.minecraft.entity.Entity;
 
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 @ElementalmasterModElements.ModElement.Tag
 public class PlayerTick2Procedure extends ElementalmasterModElements.ModElement {
 	public PlayerTick2Procedure(ElementalmasterModElements instance) {
-		super(instance, 538);
+		super(instance, 570);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure PlayerTick2!");
 			return;
@@ -68,10 +71,10 @@ public class PlayerTick2Procedure extends ElementalmasterModElements.ModElement 
 		if (event.phase == TickEvent.Phase.END) {
 			Entity entity = event.player;
 			World world = entity.world;
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
-			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
@@ -79,17 +82,6 @@ public class PlayerTick2Procedure extends ElementalmasterModElements.ModElement 
 			dependencies.put("entity", entity);
 			dependencies.put("event", event);
 			this.executeProcedure(dependencies);
-		}
-	}
-	private int serverMana = 0;
-	@SubscribeEvent
-	public void playerTick(TickEvent.PlayerTickEvent event) {
-		if (!event.player.world.isRemote) {
-			serverMana = event.player.getPersistentData().getInt("TotalMana");
-		} else {
-			if (serverMana != 0) {
-				event.player.getPersistentData().putInt("TotalMana", serverMana);
-			}
 		}
 	}
 }
