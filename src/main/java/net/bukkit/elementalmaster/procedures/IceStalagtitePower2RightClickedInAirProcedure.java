@@ -74,36 +74,36 @@ public class IceStalagtitePower2RightClickedInAirProcedure extends Elementalmast
 			if ((((itemstack).getOrCreateTag().getBoolean("XPBonus")) == (true))) {
 				(itemstack).getOrCreateTag().putDouble("XPAmount", (((itemstack).getOrCreateTag().getDouble("XPAmount")) - 2));
 			}
-		}
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 50);
-		if (((world.getBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState()
-				.getBlock())) {
-			world.setBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z - 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z - 3)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
-			world.setBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z - 3)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState()
-				.getBlock())) {
-			world.setBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z - 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) (x + 3), (int) (y + 5), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
-			world.setBlockState(new BlockPos((int) (x + 3), (int) (y + 5), (int) z), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState()
-				.getBlock())) {
-			world.setBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z + 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z + 3)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
-			world.setBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z + 3)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState()
-				.getBlock())) {
-			world.setBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z + 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
-		}
-		if (((world.getBlockState(new BlockPos((int) (x - 3), (int) (y + 5), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
-			world.setBlockState(new BlockPos((int) (x - 3), (int) (y + 5), (int) z), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			if (entity instanceof PlayerEntity)
+				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 50);
+			if (((world.getBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState()
+					.getBlock())) {
+				world.setBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z - 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z - 3)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+				world.setBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z - 3)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState()
+					.getBlock())) {
+				world.setBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z - 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) (x + 3), (int) (y + 5), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+				world.setBlockState(new BlockPos((int) (x + 3), (int) (y + 5), (int) z), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState()
+					.getBlock())) {
+				world.setBlockState(new BlockPos((int) (x + 2), (int) (y + 5), (int) (z + 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z + 3)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+				world.setBlockState(new BlockPos((int) x, (int) (y + 5), (int) (z + 3)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState()
+					.getBlock())) {
+				world.setBlockState(new BlockPos((int) (x - 2), (int) (y + 5), (int) (z + 2)), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
+			if (((world.getBlockState(new BlockPos((int) (x - 3), (int) (y + 5), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+				world.setBlockState(new BlockPos((int) (x - 3), (int) (y + 5), (int) z), FallingStalagtiteBlock.block.getDefaultState(), 3);
+			}
 		}
 	}
 }

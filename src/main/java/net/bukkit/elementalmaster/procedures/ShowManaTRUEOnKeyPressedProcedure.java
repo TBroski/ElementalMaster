@@ -4,6 +4,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Map;
@@ -20,7 +21,13 @@ public class ShowManaTRUEOnKeyPressedProcedure extends ElementalmasterModElement
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.getPersistentData().putBoolean("ShowManaCONFIG", (true));
+		{
+			boolean _setval = (boolean) (true);
+			entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ManaBar = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent(("" + ("Set Mana Show to TRUE"))), (true));
 		}

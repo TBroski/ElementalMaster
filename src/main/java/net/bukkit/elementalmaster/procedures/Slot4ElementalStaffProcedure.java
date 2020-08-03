@@ -46,7 +46,7 @@ public class Slot4ElementalStaffProcedure extends ElementalmasterModElements.Mod
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((((itemstack).getOrCreateTag().getString("StaffSlot4Power"))).equals("\u00A76Fireball Shot \u00A7fLvl 1 "))) {
+		if (((((itemstack).getOrCreateTag().getString("StaffSlot4Power"))).equals("\u00A76Fireball Shot \u00A7fLvl 1"))) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -54,7 +54,7 @@ public class Slot4ElementalStaffProcedure extends ElementalmasterModElements.Mod
 				$_dependencies.put("world", world);
 				FireThrowPowerItemRightClickedInAirProcedure.executeProcedure($_dependencies);
 			}
-		} else if (((((itemstack).getOrCreateTag().getString("StaffSlot4Power"))).equals("\u00A76Fireball Shot \u00A7dLvl 2 "))) {
+		} else if (((((itemstack).getOrCreateTag().getString("StaffSlot4Power"))).equals("\u00A76Fireball Shot \u00A7dLvl 2"))) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);

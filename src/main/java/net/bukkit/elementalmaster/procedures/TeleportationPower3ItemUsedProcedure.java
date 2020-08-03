@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.bukkit.elementalmaster.item.TeleportationStaffItem;
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Random;
@@ -36,14 +37,29 @@ public class TeleportationPower3ItemUsedProcedure extends ElementalmasterModElem
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((entity.getPersistentData().getDouble("PlayerMana")) > 11)) {
-			entity.getPersistentData().putDouble("PlayerMana", ((entity.getPersistentData().getDouble("PlayerMana")) - 12));
+		if ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) > 11)) {
+			{
+				double _setval = (double) (((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) - 12);
+				entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerMana = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			(itemstack).getOrCreateTag().putDouble("XPAmount", (((itemstack).getOrCreateTag().getDouble("XPAmount")) - 1));
 			if ((((itemstack).getOrCreateTag().getBoolean("XPBonus")) == (true))) {
 				(itemstack).getOrCreateTag().putDouble("XPAmount", (((itemstack).getOrCreateTag().getDouble("XPAmount")) - 2));
 			}
 			if ((((itemstack).getOrCreateTag().getBoolean("ManaBonus")) == (true))) {
-				entity.getPersistentData().putDouble("PlayerMana", ((entity.getPersistentData().getDouble("PlayerMana")) + 6));
+				{
+					double _setval = (double) (((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + 6);
+					entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.PlayerMana = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 			if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
 				TeleportationStaffItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 12, (float) 0, (int) 0);

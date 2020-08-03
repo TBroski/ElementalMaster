@@ -21,7 +21,7 @@ public class ManaBonusBar10on10DisplayOverlayIngameProcedure extends Elementalma
 		Entity entity = (Entity) dependencies.get("entity");
 		return ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementalmasterModVariables.PlayerVariables())).ManaBar) == (true))
-				|| ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				&& ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) > 190)
 						&& (((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana) == 200)));

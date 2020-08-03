@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Map;
@@ -32,6 +33,13 @@ public class ManaPotionFoodEatenProcedure extends ElementalmasterModElements.Mod
 		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent(("" + ("You have regained +20 Mana!"))), (true));
 		}
-		entity.getPersistentData().putDouble("PlayerMana", ((entity.getPersistentData().getDouble("PlayerMana")) + 20));
+		{
+			double _setval = (double) (((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + 20);
+			entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.PlayerMana = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

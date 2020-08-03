@@ -2,6 +2,7 @@ package net.bukkit.elementalmaster.procedures;
 
 import net.minecraft.entity.Entity;
 
+import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Map;
@@ -18,6 +19,13 @@ public class InfiniteManaOnPotionActiveTickProcedure extends ElementalmasterModE
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.getPersistentData().putDouble("PlayerMana", 100);
+		{
+			double _setval = (double) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana);
+			entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.PlayerMana = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }
