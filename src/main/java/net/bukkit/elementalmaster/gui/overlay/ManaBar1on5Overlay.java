@@ -13,11 +13,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 
+import net.bukkit.elementalmaster.procedures.ManaBar1on5DisplayOverlayIngameProcedure;
 import net.bukkit.elementalmaster.ElementalmasterModVariables;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
+
+import com.google.common.collect.ImmutableMap;
 
 @ElementalmasterModElements.ModElement.Tag
 public class ManaBar1on5Overlay extends ElementalmasterModElements.ModElement {
@@ -41,7 +44,7 @@ public class ManaBar1on5Overlay extends ElementalmasterModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			if (true) {
+			if (ManaBar1on5DisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().fontRenderer
 						.drawString(
 								"" + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)

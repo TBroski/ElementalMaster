@@ -40,6 +40,9 @@
         }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "ManaBar1on5DisplayOverlayIngame"
+    }
   }
 }
