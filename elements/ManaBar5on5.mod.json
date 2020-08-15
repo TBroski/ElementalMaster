@@ -16,12 +16,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:PlayerMana>",
+          "text": "<VAR:integer:PlayerMana>",
           "color": {
             "value": -65536,
             "falpha": 0.0
           },
-          "name": "<VAR:PlayerMana>",
+          "name": "<VAR:integer:PlayerMana>",
           "x": 73,
           "y": 443
         }
@@ -29,12 +29,12 @@
       {
         "type": "label",
         "data": {
-          "text": ": <VAR:MaxPlayerMana>",
+          "text": "/<VAR:integer:MaxPlayerMana>",
           "color": {
             "value": -65536,
             "falpha": 0.0
           },
-          "name": ": <VAR:MaxPlayerMana>",
+          "name": "/<VAR:integer:MaxPlayerMana>",
           "x": 111,
           "y": 443
         }

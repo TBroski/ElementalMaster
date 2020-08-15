@@ -27,9 +27,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.bukkit.elementalmaster.world.dimension.DarkDimensionDimension;
+import net.bukkit.elementalmaster.procedures.DarkTreeAdditionalGenerationConditionProcedure;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @ElementalmasterModElements.ModElement.Tag
 public class DarkTreeStructure extends ElementalmasterModElements.ModElement {
@@ -67,10 +70,12 @@ public class DarkTreeStructure extends ElementalmasterModElements.ModElement {
 							continue;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + -1, k);
+						BlockPos spawnTo = new BlockPos(i + -5, j + -1, k + -5);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!DarkTreeAdditionalGenerationConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("elementalmaster", "darktree"));
 						if (template == null)

@@ -36,13 +36,13 @@ public class MagicBallShot3WhileBulletFlyingTickProcedure extends Elementalmaste
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.WITCH, x, y, z, (int) 9, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.WITCH, x, y, z, (int) 9, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 6, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 6, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.END_ROD, x, y, z, (int) 3, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.END_ROD, x, y, z, (int) 3, 0.5, 0.5, 0.5, 1);
 		}
 	}
 }

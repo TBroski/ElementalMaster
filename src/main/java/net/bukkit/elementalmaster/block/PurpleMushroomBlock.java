@@ -40,6 +40,7 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.bukkit.elementalmaster.world.dimension.DarkDimensionDimension;
 import net.bukkit.elementalmaster.itemgroup.ElementalPlantsItemGroup;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
@@ -81,6 +82,8 @@ public class PurpleMushroomBlock extends ElementalmasterModElements.ModElement {
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 				if (dimensionType == DimensionType.OVERWORLD)
+					dimensionCriteria = true;
+				if (dimensionType == DarkDimensionDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;

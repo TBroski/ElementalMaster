@@ -41,6 +41,7 @@ public class FrozenEffectOnPotionActiveTickProcedure extends ElementalmasterModE
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 20, (int) 3, (false), (false)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 20, (int) 3, (false), (false)));
+			entity.getPersistentData().putBoolean("FrozenEffect", (true));
 		} else if (((new Object() {
 			int check(LivingEntity _entity) {
 				if (_entity instanceof LivingEntity) {
@@ -59,6 +60,7 @@ public class FrozenEffectOnPotionActiveTickProcedure extends ElementalmasterModE
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 20, (int) 4, (false), (false)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 20, (int) 4, (false), (false)));
+			entity.getPersistentData().putBoolean("FrozenEffect", (true));
 		} else if (((new Object() {
 			int check(LivingEntity _entity) {
 				if (_entity instanceof LivingEntity) {
@@ -77,6 +79,7 @@ public class FrozenEffectOnPotionActiveTickProcedure extends ElementalmasterModE
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 20, (int) 5, (false), (false)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 20, (int) 5, (false), (false)));
+			entity.getPersistentData().putBoolean("FrozenEffect", (true));
 		} else if (((new Object() {
 			int check(LivingEntity _entity) {
 				if (_entity instanceof LivingEntity) {
@@ -95,6 +98,7 @@ public class FrozenEffectOnPotionActiveTickProcedure extends ElementalmasterModE
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 20, (int) 6, (false), (false)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 20, (int) 6, (false), (false)));
+			entity.getPersistentData().putBoolean("FrozenEffect", (true));
 		}
 	}
 }

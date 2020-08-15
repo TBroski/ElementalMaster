@@ -22,6 +22,6 @@ public class ManaBar5on5DisplayOverlayIngameProcedure extends ElementalmasterMod
 		return ((((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementalmasterModVariables.PlayerVariables())).ManaBar) == (true))
 				&& (((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) < 3));
+						.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) < 10));
 	}
 }

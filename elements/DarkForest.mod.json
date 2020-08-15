@@ -61,30 +61,48 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "EntityMonster"
-        },
-        "minGroup": 1,
-        "maxGroup": 15,
-        "weight": 15,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityCreature"
-        },
-        "minGroup": 1,
-        "maxGroup": 15,
-        "weight": 15,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
           "value": "CUSTOM:DarkMonster"
         },
         "minGroup": 1,
-        "maxGroup": 15,
+        "maxGroup": 3,
         "weight": 15,
-        "spawnType": "creature"
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 10,
+        "spawnType": "monster"
       }
     ]
   }

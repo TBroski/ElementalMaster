@@ -47,12 +47,12 @@ public class ManaBar3on5Overlay extends ElementalmasterModElements.ModElement {
 			if (ManaBar3on5DisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().fontRenderer
 						.drawString(
-								"" + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								"" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + "",
 								posX + -176, posY + 102, -39424);
 				Minecraft.getInstance().fontRenderer
 						.drawString(
-								": " + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								"/" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana) + "",
 								posX + -157, posY + 102, -39424);
 				RenderSystem.disableDepthTest();

@@ -9,18 +9,18 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.Minecraft;
 
-import net.bukkit.elementalmaster.item.TheStaffOfElementsItem;
+import net.bukkit.elementalmaster.procedures.StaffInfoOverlayDisplayOverlayIngameProcedure;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
+
+import com.google.common.collect.ImmutableMap;
 
 @ElementalmasterModElements.ModElement.Tag
 public class StaffInfoOverlayOverlay extends ElementalmasterModElements.ModElement {
 	public StaffInfoOverlayOverlay(ElementalmasterModElements instance) {
-		super(instance, 551);
+		super(instance, 582);
 	}
 
 	@Override
@@ -36,15 +36,13 @@ public class StaffInfoOverlayOverlay extends ElementalmasterModElements.ModEleme
 			int posY = (event.getWindow().getScaledHeight()) / 2;
 			PlayerEntity entity = Minecraft.getInstance().player;
 			World world = entity.world;
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
-			if ((((entity.getPersistentData().getBoolean("ShowMana")) == (true))
-					&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-							.getItem() == new ItemStack(TheStaffOfElementsItem.block, (int) (1)).getItem()))) {
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			if (StaffInfoOverlayDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().fontRenderer.drawString("Spell:", posX + -211, posY + 85, -3407668);
 				Minecraft.getInstance().fontRenderer.drawString("Level:", posX + -211, posY + 76, -256);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getInt("ItemLevel")) + "", posX + -181, posY + 76,
+				Minecraft.getInstance().fontRenderer.drawString(" " + (entity.getPersistentData().getInt("ItemLevel")) + "", posX + -181, posY + 76,
 						-256);
 				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getString("SelectedPower")) + "", posX + -181,
 						posY + 85, -65281);

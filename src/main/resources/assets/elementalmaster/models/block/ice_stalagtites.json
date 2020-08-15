@@ -1,0 +1,8 @@
+{
+  "parent": "elementalmaster:custom/icestalagtite",
+  "textures": {
+    "all": "elementalmaster:blocks/ice_packed",
+    "particle": "elementalmaster:blocks/ice_packed",
+    "0": "elementalmaster:blocks/ice"
+  }
+}

@@ -9,7 +9,7 @@
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -29,
+    "spawnHeightOffset": -22,
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -35,6 +35,9 @@
         "value": "mutated_taiga"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "IsThereFlatSurface"
+    }
   }
 }

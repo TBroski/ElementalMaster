@@ -11,8 +11,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
+import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.LivingEntity;
 
+import net.bukkit.elementalmaster.procedures.PotionExpiresProcedure;
 import net.bukkit.elementalmaster.procedures.FrozenEffectOnPotionActiveTickProcedure;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
@@ -80,6 +82,20 @@ public class FrozenEffectPotion extends ElementalmasterModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				FrozenEffectOnPotionActiveTickProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void removeAttributesModifiersFromEntity(LivingEntity entity, AbstractAttributeMap attributeMapIn, int amplifier) {
+			super.removeAttributesModifiersFromEntity(entity, attributeMapIn, amplifier);
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				PotionExpiresProcedure.executeProcedure($_dependencies);
 			}
 		}
 

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementalmaster:blocks/darklightmushroom",
+    "particle": "elementalmaster:blocks/darklightmushroom"
+  }
+}

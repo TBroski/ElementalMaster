@@ -66,7 +66,7 @@ public class IcyPineTreeStructure extends ElementalmasterModElements.ModElement 
 							continue;
 						Rotation rotation = Rotation.NONE;
 						Mirror mirror = Mirror.NONE;
-						BlockPos spawnTo = new BlockPos(i, j + 0, k);
+						BlockPos spawnTo = new BlockPos(i -3, j + 0, k -3);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();

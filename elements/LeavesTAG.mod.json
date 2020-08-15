@@ -19,6 +19,9 @@
       },
       {
         "value": "CUSTOM:DarkLeaves"
+      },
+      {
+        "value": "CUSTOM:DarkLightLeaves"
       }
     ],
     "functions": [],

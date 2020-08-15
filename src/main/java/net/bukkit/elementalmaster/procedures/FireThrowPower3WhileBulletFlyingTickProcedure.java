@@ -36,10 +36,10 @@ public class FireThrowPower3WhileBulletFlyingTickProcedure extends Elementalmast
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 5, 1, 1, 1, 1.2);
+			((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 6, 0.5, 0.5, 0.5, 0.6);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.DRIPPING_LAVA, x, y, z, (int) 5, 1, 1, 1, 1.2);
+			((ServerWorld) world).spawnParticle(ParticleTypes.DRIPPING_LAVA, x, y, z, (int) 6, 0.5, 0.5, 0.5, 0.6);
 		}
 	}
 }

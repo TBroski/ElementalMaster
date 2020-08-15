@@ -36,22 +36,22 @@ public class WaterThrowPowerWhileBulletFlyingTickProcedure extends Elementalmast
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.FALLING_WATER, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.FALLING_WATER, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.FALLING_WATER, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.FALLING_WATER, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.FISHING, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.FISHING, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.FISHING, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.FISHING, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, x, y, z, (int) 5, 1, 1, 1, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.SPLASH, x, y, z, (int) 5, 0.5, 0.5, 0.5, 1);
 		}
 	}
 }

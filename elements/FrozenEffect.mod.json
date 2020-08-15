@@ -17,6 +17,9 @@
     "renderStatusInHUD": false,
     "onActiveTick": {
       "name": "FrozenEffectOnPotionActiveTick"
+    },
+    "onExpired": {
+      "name": "PotionExpires"
     }
   }
 }

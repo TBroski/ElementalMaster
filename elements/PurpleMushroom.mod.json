@@ -41,7 +41,8 @@
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 2,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:DarkDimension"
     ],
     "restrictionBiomes": [
       {

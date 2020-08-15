@@ -60,12 +60,12 @@ public class ManaBarOverlay extends ElementalmasterModElements.ModElement {
 				Minecraft.getInstance().fontRenderer.drawString("Mana:", posX + -204, posY + 102, -6750055);
 				Minecraft.getInstance().fontRenderer
 						.drawString(
-								": " + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								"/" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana) + "",
 								posX + -157, posY + 102, -6750055);
 				Minecraft.getInstance().fontRenderer
 						.drawString(
-								"" + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								"" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + "",
 								posX + -176, posY + 102, -6750055);
 			}

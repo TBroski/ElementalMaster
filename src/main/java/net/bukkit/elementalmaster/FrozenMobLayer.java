@@ -1,21 +1,3 @@
-/**
- * This mod element is always locked. Enter your code in the methods below.
- * If you don't need some of these methods, you can remove them as they
- * are overrides of the base class ElementalmasterModElements.ModElement.
- *
- * You can register new events in this class too.
- *
- * As this class is loaded into mod element list, it NEEDS to extend
- * ModElement class. If you remove this extend statement or remove the
- * constructor, the compilation will fail.
- *
- * If you want to make a plain independent class, create it using
- * Project Browser - New... and make sure to make the class
- * outside net.bukkit.elementalmaster as this package is managed by MCreator.
- *
- * If you change workspace package, modid or prefix, you will need
- * to manually adapt this file to these changes or remake it.
-*/
 package net.bukkit.elementalmaster;
 
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -110,7 +92,8 @@ public class FrozenMobLayer extends ElementalmasterModElements.ModElement {
 	    @Override
 	    public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 	
-	        if (entitylivingbaseIn.isPotionActive(FrozenEffectPotion.potion)) //entitylivingbaseIn.getEntity().getPersistentData().getInt("affiliatedplayer") != 0
+		System.out.println(entitylivingbaseIn.isPotionActive(FrozenEffectPotion.potion));
+	        if (entitylivingbaseIn.isPotionActive(FrozenEffectPotion.potion))
 	        {
 	            matrixStackIn.push();
 	            this.getEntityModel().copyModelAttributesTo(this.model);

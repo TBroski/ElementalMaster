@@ -25,6 +25,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 			System.err.println("Failed to load dependency entity for procedure TheStaffOfElementsRightClickedInAir!");
 			return;
 		}
+		if (dependencies.get("itemstack") == null) {
+			System.err.println("Failed to load dependency itemstack for procedure TheStaffOfElementsRightClickedInAir!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure TheStaffOfElementsRightClickedInAir!");
 			return;
@@ -37,19 +41,15 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 			System.err.println("Failed to load dependency z for procedure TheStaffOfElementsRightClickedInAir!");
 			return;
 		}
-		if (dependencies.get("itemstack") == null) {
-			System.err.println("Failed to load dependency itemstack for procedure TheStaffOfElementsRightClickedInAir!");
-			return;
-		}
 		if (dependencies.get("world") == null) {
 			System.err.println("Failed to load dependency world for procedure TheStaffOfElementsRightClickedInAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(TheStaffOfElementsItem.block, (int) (1)).getItem())) {
@@ -144,10 +144,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					BonusSlot1ElementalStaffProcedure.executeProcedure($_dependencies);
 				}
@@ -156,10 +156,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					Slot1ElementalStaffProcedure.executeProcedure($_dependencies);
 				}
@@ -168,10 +168,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					Slot2ElementalStaffProcedure.executeProcedure($_dependencies);
 				}
@@ -180,10 +180,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					Slot3ElementalStaffProcedure.executeProcedure($_dependencies);
 				}
@@ -192,10 +192,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					Slot4ElementalStaffProcedure.executeProcedure($_dependencies);
 				}
@@ -204,10 +204,10 @@ public class TheStaffOfElementsRightClickedInAirProcedure extends Elementalmaste
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
-					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					Slot5ElementalStaffProcedure.executeProcedure($_dependencies);
 				}

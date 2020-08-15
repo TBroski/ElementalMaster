@@ -57,6 +57,9 @@
         }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "StaffInfoOverlayDisplayOverlayIngame"
+    }
   }
 }

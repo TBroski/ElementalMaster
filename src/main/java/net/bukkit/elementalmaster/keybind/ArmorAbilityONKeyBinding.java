@@ -93,7 +93,6 @@ public class ArmorAbilityONKeyBinding extends ElementalmasterModElements.ModElem
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ArmorAbilityONOnKeyPressedProcedure.executeProcedure($_dependencies);
 			}
 		}

@@ -26,9 +26,12 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.bukkit.elementalmaster.procedures.IsThereFlatSurfaceProcedure;
 import net.bukkit.elementalmaster.ElementalmasterModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @ElementalmasterModElements.ModElement.Tag
 public class FireDungeonStructure extends ElementalmasterModElements.ModElement {
@@ -64,10 +67,12 @@ public class FireDungeonStructure extends ElementalmasterModElements.ModElement 
 							continue;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + -29, k);
+						BlockPos spawnTo = new BlockPos(i + -16, j + -22, k + -16);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
+						if (!IsThereFlatSurfaceProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+							continue;
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 								.getTemplateDefaulted(new ResourceLocation("elementalmaster", "firebossdungeon"));
 						if (template == null)

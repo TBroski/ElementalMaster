@@ -4035,7 +4035,7 @@
       "type": "structure",
       "sortid": 490,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "fire_dungeon"
     },
@@ -4701,7 +4701,7 @@
       "type": "structure",
       "sortid": 531,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "firium_tree"
     },
@@ -4710,7 +4710,7 @@
       "type": "structure",
       "sortid": 532,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "dark_tree"
     },
@@ -4719,7 +4719,7 @@
       "type": "structure",
       "sortid": 533,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "icy_pine_tree"
     },
@@ -6414,6 +6414,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -6424,10 +6428,6 @@
           {
             "name": "z",
             "type": "number"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "world",
@@ -7911,6 +7911,203 @@
           }
         ]
       }
+    },
+    {
+      "name": "StaffInfoOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 685,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "staff_info_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkTreeAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 686,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_tree_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IceStalagtites",
+      "type": "block",
+      "sortid": 687,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_stalagtites"
+    },
+    {
+      "name": "IsThereBlockAbove",
+      "type": "procedure",
+      "sortid": 688,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "is_there_block_above",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PackedIceGenerate",
+      "type": "block",
+      "sortid": 689,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "packed_ice_generate"
+    },
+    {
+      "name": "IsThereFlatSurface",
+      "type": "procedure",
+      "sortid": 690,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "is_there_flat_surface",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkLightLeaves",
+      "type": "block",
+      "sortid": 691,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_light_leaves"
+    },
+    {
+      "name": "DarkLightWood",
+      "type": "block",
+      "sortid": 692,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_light_wood"
+    },
+    {
+      "name": "DarkLightPlanks",
+      "type": "block",
+      "sortid": 693,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_light_planks"
+    },
+    {
+      "name": "DarkLightPlankRecipe",
+      "type": "recipe",
+      "sortid": 694,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_light_plank_recipe"
+    },
+    {
+      "name": "DarkLightTree",
+      "type": "structure",
+      "sortid": 695,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dark_light_tree"
+    },
+    {
+      "name": "BlueMushroom",
+      "type": "plant",
+      "sortid": 696,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_mushroom"
+    },
+    {
+      "name": "PotionExpires",
+      "type": "procedure",
+      "sortid": 697,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8021,6 +8218,7 @@
       "item.elementalmaster.darksword": "Dark Sword",
       "item.elementalmaster.ice_masters_armor_chestplate": "Ice Master\u0027s Armor Body",
       "item.elementalmaster.elemental_sword": "Elemental Sword",
+      "block.elementalmaster.dark_light_planks": "Firium Planks",
       "block.elementalmaster.elementaloreblock": "Block of Elemental",
       "item.elementalmaster.darkmonster": "Dark Monster Spawn Egg",
       "item.minecraft.lingering_potion.effect.naturalmanaregeneration": "Lingering Natural Mana Regeneration",
@@ -8111,6 +8309,7 @@
       "item.elementalmaster.cuttingtool": "Cutting Tool",
       "item.elementalmaster.naturenuggets": "Nature Nuggets",
       "block.elementalmaster.lightsandstone": "Light Sandstone",
+      "block.elementalmaster.dark_light_wood": "Dark Light Wood",
       "item.elementalmaster.fireshovel": "Fire Shovel",
       "item.minecraft.tipped_arrow.effect.staff_level_max": "Arrow of Staff Level Max",
       "item.elementalmaster.fireresistanceup": "Fire Resistance UP",
@@ -8141,6 +8340,7 @@
       "block.elementalmaster.orange_flower": "Orange Flower",
       "item.elementalmaster.iceshovel": "Ice Shovel",
       "item.elementalmaster.ice_stalagtite_2": "Ice Stalagtite Power",
+      "block.elementalmaster.ice_stalagtites": "Falling Stalagtite",
       "advancements.from_the_deep_of_the_woods.title": "From The Depths Of The Woods",
       "block.elementalmaster.unbreakable_dark_stone_brick": "Unbreakable Dark Stone Brick",
       "block.elementalmaster.darkfences": "Dark Fences",
@@ -8152,9 +8352,11 @@
       "block.elementalmaster.firiumtrapdoor": "Firium Trapdoor",
       "block.elementalmaster.elementalore": "Elemental Ore",
       "item.elementalmaster.super_elemental_sword": "Super Elemental Sword",
+      "block.elementalmaster.blue_mushroom": "Blue Mushroom",
       "item.elementalmaster.earth_masters_armorbody": "Earth Masters Armor Body",
       "item.elementalmaster.goldshuriken": "Gold Shuriken",
       "item.elementalmaster.water_masters_armorhelmet": "Water Masters\u0027 Armor Crown",
+      "block.elementalmaster.packed_ice_generate": "Firestone Ore",
       "item.elementalmaster.iceextract": "Ice Extract",
       "block.elementalmaster.firiumlog": "Firium Wood",
       "item.elementalmaster.teleportation_power": "Teleportation Power",
@@ -8162,6 +8364,7 @@
       "item.elementalmaster.firepickaxe": "Fire Pickaxe",
       "item.elementalmaster.lightningrune": "Rune of Light",
       "item.elementalmaster.firearmor_leggings": "Fire Leggings",
+      "block.elementalmaster.dark_light_leaves": "Dark Light Leaves",
       "block.elementalmaster.icypineslab": "Icy Pine Slab",
       "advancements.more_humid_than_dry.title": "More Humid Than Dry",
       "item.elementalmaster.the_staff_of_elements": "§dThe Staff Of Elements",
@@ -8480,6 +8683,7 @@
       "item.elementalmaster.darksword": "Dark Sword",
       "item.elementalmaster.ice_masters_armor_chestplate": "Ice Master\u0027s Armor Body",
       "item.elementalmaster.elemental_sword": "Elemental Sword",
+      "block.elementalmaster.dark_light_planks": "Firium Planks",
       "block.elementalmaster.elementaloreblock": "Block of Elemental",
       "item.elementalmaster.darkmonster": "Dark Monster Spawn Egg",
       "item.minecraft.lingering_potion.effect.naturalmanaregeneration": "Lingering Natural Mana Regeneration",
@@ -8570,6 +8774,7 @@
       "item.elementalmaster.cuttingtool": "Cutting Tool",
       "item.elementalmaster.naturenuggets": "Nature Nuggets",
       "block.elementalmaster.lightsandstone": "Light Sandstone",
+      "block.elementalmaster.dark_light_wood": "Dark Light Wood",
       "item.elementalmaster.fireshovel": "Fire Shovel",
       "item.minecraft.tipped_arrow.effect.staff_level_max": "Arrow of Staff Level Max",
       "item.elementalmaster.fireresistanceup": "Fire Resistance UP",
@@ -8600,6 +8805,7 @@
       "block.elementalmaster.orange_flower": "Orange Flower",
       "item.elementalmaster.iceshovel": "Ice Shovel",
       "item.elementalmaster.ice_stalagtite_2": "Ice Stalagtite Power",
+      "block.elementalmaster.ice_stalagtites": "Falling Stalagtite",
       "advancements.from_the_deep_of_the_woods.title": "From The Depths Of The Woods",
       "block.elementalmaster.unbreakable_dark_stone_brick": "Unbreakable Dark Stone Brick",
       "block.elementalmaster.darkfences": "Dark Fences",
@@ -8611,9 +8817,11 @@
       "block.elementalmaster.firiumtrapdoor": "Firium Trapdoor",
       "block.elementalmaster.elementalore": "Elemental Ore",
       "item.elementalmaster.super_elemental_sword": "Super Elemental Sword",
+      "block.elementalmaster.blue_mushroom": "Purple Mushroom",
       "item.elementalmaster.earth_masters_armorbody": "Earth Masters Armor Body",
       "item.elementalmaster.goldshuriken": "Gold Shuriken",
       "item.elementalmaster.water_masters_armorhelmet": "Water Masters\u0027 Armor Crown",
+      "block.elementalmaster.packed_ice_generate": "Firestone Ore",
       "item.elementalmaster.iceextract": "Ice Extract",
       "block.elementalmaster.firiumlog": "Firium Wood",
       "item.elementalmaster.teleportation_power": "Teleportation Staff Power",
@@ -8621,6 +8829,7 @@
       "item.elementalmaster.firepickaxe": "Fire Pickaxe",
       "item.elementalmaster.lightningrune": "Rune of Light",
       "item.elementalmaster.firearmor_leggings": "Fire Leggings",
+      "block.elementalmaster.dark_light_leaves": "Dark Light Leaves",
       "block.elementalmaster.icypineslab": "Icy Pine Slab",
       "advancements.more_humid_than_dry.title": "More Humid Than Dry",
       "item.elementalmaster.the_staff_of_elements": "§dThe Staff Of Elements",
@@ -8894,5 +9103,5 @@
     "modElementsPackage": "net.bukkit.elementalmaster",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000431617
+  "mcreatorVersion": 202000432115
 }

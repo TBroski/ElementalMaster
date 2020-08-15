@@ -48,7 +48,7 @@ public class ManaBar2on5Overlay extends ElementalmasterModElements.ModElement {
 				Minecraft
 						.getInstance().fontRenderer
 								.drawString(
-										"" + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										"" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 												.orElse(new ElementalmasterModVariables.PlayerVariables())).PlayerMana) + "",
 										posX + -176, posY + 102, -256);
 				RenderSystem.disableDepthTest();
@@ -65,7 +65,7 @@ public class ManaBar2on5Overlay extends ElementalmasterModElements.ModElement {
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				Minecraft.getInstance().fontRenderer
 						.drawString(
-								": " + ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								"/" + (int) ((entity.getCapability(ElementalmasterModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new ElementalmasterModVariables.PlayerVariables())).MaxPlayerMana) + "",
 								posX + -157, posY + 102, -256);
 			}

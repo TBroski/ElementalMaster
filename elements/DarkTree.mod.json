@@ -24,6 +24,9 @@
         "value": "CUSTOM:DarkForest"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "DarkTreeAdditionalGenerationCondition"
+    }
   }
 }
