@@ -91,9 +91,8 @@ public class FrozenMobLayer extends ElementalmasterModElements.ModElement {
 	
 	    @Override
 	    public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
-	
-		System.out.println(entitylivingbaseIn.isPotionActive(FrozenEffectPotion.potion));
-	        if (entitylivingbaseIn.isPotionActive(FrozenEffectPotion.potion))
+
+	        if (entitylivingbaseIn.getPeristantData().getBoolean("frozen"))
 	        {
 	            matrixStackIn.push();
 	            this.getEntityModel().copyModelAttributesTo(this.model);
